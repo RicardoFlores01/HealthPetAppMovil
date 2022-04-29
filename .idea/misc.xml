@@ -3,7 +3,11 @@
   <component name="DesignSurface">
     <option name="filePathToZoomLevelMap">
       <map>
-        <entry key="..\:/Users/52449/AndroidStudioProjects/HealthPetApp/app/src/main/res/layout/activity_login.xml" value="0.13451086956521738" />
+        <entry key="..\:/Users/52449/AndroidStudioProjects/HealthPetApp/app/src/main/res/layout/activity_login.xml" value="0.25" />
+        <entry key="..\:/Users/52449/AndroidStudioProjects/HealthPetApp/app/src/main/res/layout/activity_main.xml" value="0.13451086956521738" />
+        <entry key="..\:/Users/52449/AndroidStudioProjects/HealthPetApp/app/src/main/res/layout/activity_register.xml" value="0.25" />
+        <entry key="..\:/Users/52449/AndroidStudioProjects/HealthPetApp/app/src/main/res/layout/activity_two_step_verification.xml" value="0.25" />
+        <entry key="..\:/Users/52449/AndroidStudioProjects/HealthPetApp/app/src/main/res/layout/content_menu.xml" value="0.12092391304347826" />
       </map>
     </option>
   </component>

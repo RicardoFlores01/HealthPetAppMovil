@@ -20,7 +20,7 @@ public class RegisterActivity extends AppCompatActivity {
         register.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                Intent intent = new Intent(RegisterActivity.this, example.com.healthpet.TwoStepVerification.class);
+                Intent intent = new Intent(RegisterActivity.this, TwoStepVerification.class);
                 startActivity(intent);
             }
         });
