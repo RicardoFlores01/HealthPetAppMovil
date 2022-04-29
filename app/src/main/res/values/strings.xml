@@ -28,6 +28,11 @@
     <string name="menu_settings">Settings</string>
     <string name="menu_rateus">Rate us</string>
 
+    <string name="title_dates">My Dates</string>
+    <string name="title_date">Medical appointment to check the dog</string>
+    <string name="date">15/02/22</string>
+    <string name="hour">15:00 pm</string>
+    <string name="description">Appointment details if you are an all-week patient or if you have a special vaccine to administrer.</string>
 
     <string name="title_activity_menu">HealthPet</string>
 </resources>
