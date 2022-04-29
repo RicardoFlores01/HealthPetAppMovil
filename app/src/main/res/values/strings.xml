@@ -1,0 +1,27 @@
+<resources>
+    <string name="app_name">HealthPet</string>
+    <string name="missyou">We miss you </string>
+    <string name="login">Login</string>
+    <string name="email">Email</string>
+    <string name="password">Password</string>
+    <string name="link_register">If you not account, register here</string>
+    <string name="register">Register</string>
+    <string name="username">Username</string>
+    <string name="phone">Phone</string>
+    <string name="Welcome_to_healthpet">Welcome to HealthPet</string>
+    <string name="Two_Step_Verification">Two-Step Verification</string>
+    <string name="descVerification">A verification code has been sent to your notifications.</string>
+    <string name="code">Enter the 6 digit code</string>
+    <string name="btnVerification">Verify</string>
+
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+    <string name="nav_header_title">Ricardo Flores</string>
+    <string name="nav_header_subtitle">HealthPet</string>
+    <string name="nav_header_desc">Navigation header</string>
+    <string name="action_settings">Settings</string>
+
+    <string name="menu_home">Home</string>
+    <string name="menu_gallery">Gallery</string>
+    <string name="menu_slideshow">Slideshow</string>
+</resources>
