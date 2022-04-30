@@ -19,6 +19,7 @@
         <item name="windowNoTitle">true</item>
     </style>
 
+
     <style name="Theme.HealthPetApp.AppBarOverlay" parent="ThemeOverlay.AppCompat.Dark.ActionBar" />
 
     <style name="Theme.HealthPetApp.PopupOverlay" parent="ThemeOverlay.AppCompat.Light" />
