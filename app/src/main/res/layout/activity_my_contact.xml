@@ -1,0 +1,136 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MyContact">
+
+    <TextView
+        android:id="@+id/title_date"
+        android:layout_width="359dp"
+        android:layout_height="wrap_content"
+        android:text="@string/contact"
+        android:textSize="20sp"
+        app:flow_verticalAlign="top"
+        android:textColor="@color/grey"
+        android:textStyle=""
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        android:layout_marginStart="25dp"
+        android:layout_marginTop="30dp" />
+
+    <TextView
+        android:id="@+id/service_title"
+        android:layout_width="359dp"
+        android:layout_height="wrap_content"
+        android:text="@string/person_name"
+        android:textSize="25sp"
+        app:flow_verticalAlign="top"
+        android:textColor="@color/black"
+        android:textStyle="bold"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/title_date"
+        android:layout_marginStart="25dp"
+        android:layout_marginTop="18dp" />
+
+    <TextView
+        android:id="@+id/date_service"
+        android:layout_width="359dp"
+        android:layout_height="wrap_content"
+        android:text="@string/phone"
+        android:textSize="20sp"
+        app:flow_verticalAlign="top"
+        android:textColor="@color/grey"
+        android:textStyle=""
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/service_title"
+        android:layout_marginStart="25dp"
+        android:layout_marginTop="22dp" />
+
+    <TextView
+        android:id="@+id/date"
+        android:layout_width="359dp"
+        android:layout_height="wrap_content"
+        android:text="@string/phone_num"
+        android:textSize="25sp"
+        app:flow_verticalAlign="top"
+        android:textColor="@color/black"
+        android:textStyle="bold"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/date_service"
+        android:layout_marginStart="25dp"
+        android:layout_marginTop="10dp" />
+
+    <TextView
+        android:id="@+id/time"
+        android:layout_width="359dp"
+        android:layout_height="wrap_content"
+        android:text="@string/address"
+        android:textSize="20sp"
+        app:flow_verticalAlign="top"
+        android:textColor="@color/grey"
+        android:textStyle=""
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/date"
+        android:layout_marginStart="25dp"
+        android:layout_marginTop="15dp" />
+
+    <TextView
+        android:id="@+id/hour"
+        android:layout_width="359dp"
+        android:layout_height="wrap_content"
+        android:text="@string/address_te"
+        android:textSize="25sp"
+        app:flow_verticalAlign="top"
+        android:textColor="@color/black"
+        android:textStyle="bold"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/time"
+        android:layout_marginStart="25dp"
+        android:layout_marginTop="10dp" />
+
+    <TextView
+        android:id="@+id/person"
+        android:layout_width="359dp"
+        android:layout_height="wrap_content"
+        android:text="@string/email"
+        android:textSize="20sp"
+        app:flow_verticalAlign="top"
+        android:textColor="@color/grey"
+        android:textStyle=""
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/hour"
+        android:layout_marginStart="25dp"
+        android:layout_marginTop="22dp" />
+
+    <TextView
+        android:id="@+id/person_na"
+        android:layout_width="359dp"
+        android:layout_height="wrap_content"
+        android:text="@string/email_te"
+        android:textSize="25sp"
+        app:flow_verticalAlign="top"
+        android:textColor="@color/black"
+        android:textStyle="bold"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/person"
+        android:layout_marginStart="25dp"
+        android:layout_marginTop="10dp" />
+
+    <Button
+        android:id="@+id/button"
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:text="@string/call"
+        android:backgroundTint="@color/white"
+        android:textColor="@color/purple_500"
+        android:textSize="18dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/person_na"
+        android:layout_marginStart="25dp"
+        android:layout_marginTop="25dp" />
+
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

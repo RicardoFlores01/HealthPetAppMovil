@@ -42,5 +42,26 @@
     <string name="descr">Description</string>
     <string name="call">Call to user</string>
 
+
+    <string name="name_pet">Name of pet owner</string>
+    <string name="remind">Remind me</string>
+    <string name="shedule">Schedule the day and time</string>
+    <string name="type">Type something here</string>
+    <string name="calendar">Calendar</string>
+    <string name="time">Time</string>
+    <string name="save">Save the Date</string>
+
+    <string name="name_owner1">Ramon Padilla</string>
+    <string name="contacts">My Contacts</string>
+    <string name="name">Name</string>
+    <string name="address">Address</string>
+    <string name="save_contact">Save the contact</string>
+
+    <string name="contact">Contact</string>
+    <string name="phone_num">4495777823</string>
+    <string name="address_te">Dzilam 209 Infonavit M.</string>
+    <string name="email_te">ricardo@gmail.com</string>
+
+
     <string name="title_activity_menu">HealthPet</string>
 </resources>

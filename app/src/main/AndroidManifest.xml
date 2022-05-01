@@ -10,6 +10,30 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.HealthPetApp">
         <activity
+            android:name=".MyContact"
+            android:exported="true" />
+        <activity
+            android:name=".AddContact"
+            android:exported="true"
+            android:label="Add Contact"
+            android:parentActivityName=".MenuActivity" />
+        <activity
+            android:name=".shedule_appointment"
+            android:exported="true" />
+        <activity
+            android:name=".LoginActivity"
+            android:exported="true"
+            android:label="@string/login" />
+        <activity
+            android:name=".TwoStepVerification"
+            android:exported="true"
+            android:label="Two-Step Verification" />
+        <activity
+            android:name=".RegisterActivity"
+            android:exported="true"
+            android:label="@string/Welcome_to_healthpet"
+            android:parentActivityName=".LoginActivity" />
+        <activity
             android:name=".MyAppointment"
             android:exported="true" />
         <activity
