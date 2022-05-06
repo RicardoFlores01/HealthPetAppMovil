@@ -1,5 +1,6 @@
 <resources>
     <string name="app_name">HealthPet</string>
+
     <string name="missyou">We miss you </string>
     <string name="login">Login</string>
     <string name="email">Email</string>
@@ -61,6 +62,25 @@
     <string name="phone_num">4495777823</string>
     <string name="address_te">Dzilam 209 Infonavit M.</string>
     <string name="email_te">ricardo@gmail.com</string>
+
+    <string name="name_pet_pets">Simba</string>
+    <string name="name_pet_pets1">Name</string>
+    <string name="race">Chihuahueño</string>
+    <string name="age">4 years</string>
+    <string name="weight">3 kg</string>
+    <string name="race1">race</string>
+    <string name="age1">age</string>
+    <string name="weight1">Weight</string>
+    <string name="name_own">Ricardo - </string>
+
+    <string name="allergies">Allergies or recommendations</string>
+    <string name="desc_allergies">The recommendations for the pet is not to be in the dust for too long  due to the infection it has.</string>
+    <string name="tratments">Treatments</string>
+    <string name="tablet1">Tablet #1 - 07:00 AM</string>
+    <string name="tablet2">Tablet #2 - 02:00 PM</string>
+    <string name="tablet3">Tablet #3 - 08:00 PM</string>
+    <string name="clinical">Clinical History</string>
+    <string name="date_clinical">March 09 2022</string>
 
 
     <string name="title_activity_menu">HealthPet</string>

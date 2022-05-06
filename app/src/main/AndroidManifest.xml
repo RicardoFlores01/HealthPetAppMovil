@@ -10,6 +10,9 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.HealthPetApp">
         <activity
+            android:name=".MedicalHistory"
+            android:exported="true" />
+        <activity
             android:name=".MyContact"
             android:exported="true" />
         <activity
