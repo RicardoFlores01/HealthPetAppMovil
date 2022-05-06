@@ -12,7 +12,7 @@
         android:layout_height="60dp"
         android:layout_marginStart="25dp"
         android:fontFamily="@font/regular"
-        android:background="@drawable/ic_baseline_pets_24"
+        android:background="@drawable/photo1"
         android:textColor="@color/black"
         android:layout_marginTop="30dp"
         app:layout_constraintStart_toStartOf="parent"

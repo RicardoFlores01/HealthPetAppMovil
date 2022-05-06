@@ -6,14 +6,13 @@
     android:layout_height="match_parent"
     tools:context=".ui.slideshow.SlideshowFragment">
 
-    <Button
+    <ImageButton
         android:id="@+id/img_pet"
         android:layout_width="60dp"
         android:layout_height="60dp"
         android:layout_marginStart="25dp"
         android:fontFamily="@font/regular"
-        android:background="@drawable/ic_baseline_pets_24"
-        android:textColor="@color/black"
+        android:background="@drawable/photo1"
         android:layout_marginTop="60dp"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
@@ -82,7 +81,7 @@
         android:layout_height="60dp"
         android:layout_marginStart="25dp"
         android:fontFamily="@font/regular"
-        android:background="@drawable/ic_baseline_pets_24"
+        android:background="@drawable/photo2"
         android:textColor="@color/black"
         android:layout_marginTop="50dp"
         app:layout_constraintStart_toStartOf="parent"
@@ -152,7 +151,7 @@
         android:layout_height="60dp"
         android:layout_marginStart="25dp"
         android:fontFamily="@font/regular"
-        android:background="@drawable/ic_baseline_pets_24"
+        android:background="@drawable/photo3"
         android:textColor="@color/black"
         android:layout_marginTop="50dp"
         app:layout_constraintStart_toStartOf="parent"
