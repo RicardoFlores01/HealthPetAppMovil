@@ -45,14 +45,6 @@ public class HomeFragment extends Fragment {
             }
         });
 
-        floating_add = (Button) root.findViewById(R.id.floatingActionButton);
-        floating_add.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View view) {
-                Intent intent = new Intent(getActivity(), AddContact.class);
-                startActivity((intent));
-            }
-        });
 
        // final TextView textView = binding.textHome;
         homeViewModel.getText().observe(getViewLifecycleOwner(), new Observer<String>() {
