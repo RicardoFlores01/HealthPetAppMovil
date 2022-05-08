@@ -13,8 +13,8 @@
         android:id="@+id/imgVerification"
         android:layout_width="150dp"
         android:layout_height="150dp"
-        android:layout_marginStart="120dp"
-        android:layout_marginTop="50dp"
+        android:layout_marginStart="100dp"
+        android:layout_marginTop="20dp"
         android:background="@drawable/verification"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
@@ -23,10 +23,10 @@
         android:id="@+id/textVerification"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginStart="30dp"
+        android:layout_marginStart="20dp"
         android:layout_marginTop="30dp"
         android:text="@string/Two_Step_Verification"
-        android:textSize="30dp"
+        android:textSize="25dp"
         android:textColor="@color/black"
         android:textStyle="bold"
         android:fontFamily="@font/regular"
@@ -35,9 +35,9 @@
 
     <TextView
         android:id="@+id/descVerification"
-        android:layout_width="350dp"
+        android:layout_width="300dp"
         android:layout_height="wrap_content"
-        android:layout_marginStart="30dp"
+        android:layout_marginStart="20dp"
         android:layout_marginTop="10dp"
         android:text="@string/descVerification"
         android:textSize="18dp"
@@ -49,11 +49,11 @@
         android:id="@+id/code"
         android:layout_width="300dp"
         android:layout_height="55dp"
-        android:layout_marginStart="30dp"
+        android:layout_marginStart="20dp"
         android:layout_marginTop="25dp"
         android:ems="50"
         android:hint="@string/code"
-        android:inputType="text"
+        android:inputType="number"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/descVerification" />
 
@@ -64,7 +64,7 @@
         android:text="@string/btnVerification"
         android:backgroundTint="#FFBA5C"
         app:cornerRadius="20dp"
-        android:layout_marginStart="30dp"
+        android:layout_marginStart="20dp"
         android:layout_marginTop="20dp"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/code" />

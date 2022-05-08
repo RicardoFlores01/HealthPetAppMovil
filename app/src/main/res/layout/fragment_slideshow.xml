@@ -1,217 +1,226 @@
 <?xml version="1.0" encoding="utf-8"?>
-<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
-    android:layout_width="match_parent"
-    android:layout_height="match_parent"
-    tools:context=".ui.slideshow.SlideshowFragment">
+    android:layout_width="409dp"
+    android:layout_height="729dp"
+    tools:layout_editor_absoluteX="1dp"
+    tools:layout_editor_absoluteY="1dp"
+    android:fillViewport="true">
 
-    <TextView
-        android:id="@+id/img_pet"
-        android:layout_width="60dp"
-        android:layout_height="60dp"
-        android:layout_marginStart="25dp"
-        android:fontFamily="@font/regular"
-        android:background="@drawable/photo1"
-        android:layout_marginTop="60dp"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        tools:context=".ui.slideshow.SlideshowFragment">
 
-    <TextView
-        android:id="@+id/name_pet"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginStart="27dp"
-        android:layout_marginTop="25dp"
-        android:text="@string/name_pet_pets"
-        android:textSize="25dp"
-        android:textStyle="bold"
-        android:textColor="@color/black"
-        app:layout_constraintStart_toEndOf="@+id/img_pet"
-        app:layout_constraintTop_toTopOf="parent" />
+        <TextView
+            android:id="@+id/img_pet"
+            android:layout_width="60dp"
+            android:layout_height="60dp"
+            android:layout_marginStart="25dp"
+            android:fontFamily="@font/regular"
+            android:background="@drawable/photo1"
+            android:layout_marginTop="60dp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
 
-    <TextView
-        android:id="@+id/race"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginStart="26dp"
-        android:layout_marginTop="1dp"
-        android:textSize="20dp"
-        android:text="@string/race"
-        app:layout_constraintStart_toEndOf="@+id/img_pet"
-        app:layout_constraintTop_toBottomOf="@+id/name_pet" />
+        <TextView
+            android:id="@+id/name_pet"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="27dp"
+            android:layout_marginTop="20dp"
+            android:text="@string/name_pet_pets"
+            android:textSize="22dp"
+            android:textStyle="bold"
+            android:textColor="@color/black"
+            app:layout_constraintStart_toEndOf="@+id/img_pet"
+            app:layout_constraintTop_toTopOf="parent" />
 
-    <TextView
-        android:id="@+id/age"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginStart="111dp"
-        android:layout_marginTop="5dp"
-        android:text="@string/age"
-        android:textSize="20dp"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/race" />
+        <TextView
+            android:id="@+id/race"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="26dp"
+            android:layout_marginTop="1dp"
+            android:textSize="18dp"
+            android:text="@string/race"
+            app:layout_constraintStart_toEndOf="@+id/img_pet"
+            app:layout_constraintTop_toBottomOf="@+id/name_pet" />
 
-    <TextView
-        android:id="@+id/weight"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginStart="110dp"
-        android:layout_marginTop="5dp"
-        android:text="@string/weight"
-        android:textSize="20dp"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/age" />
+        <TextView
+            android:id="@+id/age"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="111dp"
+            android:layout_marginTop="5dp"
+            android:text="@string/age"
+            android:textSize="18dp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/race" />
 
-    <View
-        android:id="@+id/line"
-        android:layout_width="300dp"
-        android:layout_height="1dp"
-        android:layout_marginStart="25dp"
-        android:layout_marginTop="18dp"
-        android:background="@color/line"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@id/weight" />
+        <TextView
+            android:id="@+id/weight"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="110dp"
+            android:layout_marginTop="5dp"
+            android:text="@string/weight"
+            android:textSize="18dp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/age" />
 
-
-    <!-- Segundo -->
-    <TextView
-        android:id="@+id/img_pet1"
-        android:layout_width="60dp"
-        android:layout_height="60dp"
-        android:layout_marginStart="25dp"
-        android:fontFamily="@font/regular"
-        android:background="@drawable/photo2"
-        android:textColor="@color/black"
-        android:layout_marginTop="50dp"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@id/line"/>
-
-    <TextView
-        android:id="@+id/name_pet1"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginStart="27dp"
-        android:layout_marginTop="190dp"
-        android:text="@string/name_pet_pets1"
-        android:textSize="25dp"
-        android:textStyle="bold"
-        android:textColor="@color/black"
-        app:layout_constraintStart_toEndOf="@+id/img_pet1"
-        app:layout_constraintTop_toTopOf="parent" />
-
-    <TextView
-        android:id="@+id/race1"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginStart="26dp"
-        android:layout_marginTop="1dp"
-        android:textSize="20dp"
-        android:text="@string/race1"
-        app:layout_constraintStart_toEndOf="@+id/img_pet1"
-        app:layout_constraintTop_toBottomOf="@+id/name_pet1" />
-
-    <TextView
-        android:id="@+id/age1"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginStart="111dp"
-        android:layout_marginTop="5dp"
-        android:text="@string/age1"
-        android:textSize="20dp"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/race1" />
-
-    <TextView
-        android:id="@+id/weight1"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginStart="110dp"
-        android:layout_marginTop="5dp"
-        android:text="@string/weight1"
-        android:textSize="20dp"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/age1" />
-
-    <View
-        android:id="@+id/line2"
-        android:layout_width="300dp"
-        android:layout_height="1dp"
-        android:layout_marginStart="25dp"
-        android:layout_marginTop="18dp"
-        android:background="@color/line"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@id/weight1" />
-
-    <!-- Tercera -->
-
-    <TextView
-        android:id="@+id/img_pet2"
-        android:layout_width="60dp"
-        android:layout_height="60dp"
-        android:layout_marginStart="25dp"
-        android:fontFamily="@font/regular"
-        android:background="@drawable/photo3"
-        android:textColor="@color/black"
-        android:layout_marginTop="50dp"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@id/line2"/>
-
-    <TextView
-        android:id="@+id/name_pet2"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginStart="27dp"
-        android:layout_marginTop="350dp"
-        android:text="@string/name_pet_pets1"
-        android:textSize="25dp"
-        android:textStyle="bold"
-        android:textColor="@color/black"
-        app:layout_constraintStart_toEndOf="@+id/img_pet2"
-        app:layout_constraintTop_toTopOf="parent" />
-
-    <TextView
-        android:id="@+id/race2"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginStart="26dp"
-        android:layout_marginTop="1dp"
-        android:textSize="20dp"
-        android:text="@string/race1"
-        app:layout_constraintStart_toEndOf="@+id/img_pet2"
-        app:layout_constraintTop_toBottomOf="@+id/name_pet2" />
-
-    <TextView
-        android:id="@+id/age2"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginStart="111dp"
-        android:layout_marginTop="5dp"
-        android:text="@string/age1"
-        android:textSize="20dp"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/race2" />
-
-    <TextView
-        android:id="@+id/weight2"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginStart="110dp"
-        android:layout_marginTop="5dp"
-        android:text="@string/weight"
-        android:textSize="20dp"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/age2" />
-
-    <View
-        android:id="@+id/line3"
-        android:layout_width="300dp"
-        android:layout_height="1dp"
-        android:layout_marginStart="25dp"
-        android:layout_marginTop="18dp"
-        android:background="@color/line"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@id/weight2" />
+        <View
+            android:id="@+id/line"
+            android:layout_width="300dp"
+            android:layout_height="1dp"
+            android:layout_marginStart="25dp"
+            android:layout_marginTop="18dp"
+            android:background="@color/line"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/weight" />
 
 
-</androidx.constraintlayout.widget.ConstraintLayout>
+        <!-- Segundo -->
+        <TextView
+            android:id="@+id/img_pet1"
+            android:layout_width="60dp"
+            android:layout_height="60dp"
+            android:layout_marginStart="25dp"
+            android:fontFamily="@font/regular"
+            android:background="@drawable/photo2"
+            android:textColor="@color/black"
+            android:layout_marginTop="30dp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/line"/>
+
+        <TextView
+            android:id="@+id/name_pet1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="27dp"
+            android:layout_marginTop="160dp"
+            android:text="@string/name_pet_pets1"
+            android:textSize="22dp"
+            android:textStyle="bold"
+            android:textColor="@color/black"
+            app:layout_constraintStart_toEndOf="@+id/img_pet1"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:id="@+id/race1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="26dp"
+            android:layout_marginTop="1dp"
+            android:textSize="18dp"
+            android:text="@string/race1"
+            app:layout_constraintStart_toEndOf="@+id/img_pet1"
+            app:layout_constraintTop_toBottomOf="@+id/name_pet1" />
+
+        <TextView
+            android:id="@+id/age1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="111dp"
+            android:layout_marginTop="5dp"
+            android:text="@string/age1"
+            android:textSize="18dp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/race1" />
+
+        <TextView
+            android:id="@+id/weight1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="110dp"
+            android:layout_marginTop="5dp"
+            android:text="@string/weight1"
+            android:textSize="18dp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/age1" />
+
+        <View
+            android:id="@+id/line2"
+            android:layout_width="300dp"
+            android:layout_height="1dp"
+            android:layout_marginStart="25dp"
+            android:layout_marginTop="18dp"
+            android:background="@color/line"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/weight1" />
+
+        <!-- Tercera -->
+
+        <TextView
+            android:id="@+id/img_pet2"
+            android:layout_width="60dp"
+            android:layout_height="60dp"
+            android:layout_marginStart="25dp"
+            android:fontFamily="@font/regular"
+            android:background="@drawable/photo3"
+            android:textColor="@color/black"
+            android:layout_marginTop="30dp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/line2"/>
+
+        <TextView
+            android:id="@+id/name_pet2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="27dp"
+            android:layout_marginTop="300dp"
+            android:text="@string/name_pet_pets1"
+            android:textSize="22dp"
+            android:textStyle="bold"
+            android:textColor="@color/black"
+            app:layout_constraintStart_toEndOf="@+id/img_pet2"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:id="@+id/race2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="26dp"
+            android:layout_marginTop="1dp"
+            android:textSize="18dp"
+            android:text="@string/race1"
+            app:layout_constraintStart_toEndOf="@+id/img_pet2"
+            app:layout_constraintTop_toBottomOf="@+id/name_pet2" />
+
+        <TextView
+            android:id="@+id/age2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="111dp"
+            android:layout_marginTop="5dp"
+            android:text="@string/age1"
+            android:textSize="18dp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/race2" />
+
+        <TextView
+            android:id="@+id/weight2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="110dp"
+            android:layout_marginTop="5dp"
+            android:text="@string/weight1"
+            android:textSize="18dp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/age2" />
+
+        <View
+            android:id="@+id/line3"
+            android:layout_width="300dp"
+            android:layout_height="1dp"
+            android:layout_marginStart="25dp"
+            android:layout_marginTop="18dp"
+            android:background="@color/line"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/weight2" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</ScrollView>
