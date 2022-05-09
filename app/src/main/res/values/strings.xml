@@ -82,6 +82,10 @@
     <string name="clinical">Clinical History</string>
     <string name="date_clinical">March 09 2022</string>
 
+    <string name="name_profile">Ricardo Flores</string>
+    <string name="email_profile">ricardo1@gmail.com</string>
+    <string name="password_profile">*********</string>
+    <string name="phone_profile">4495777823</string>
 
     <string name="title_activity_menu">HealthPet</string>
 </resources>

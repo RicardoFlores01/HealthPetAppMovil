@@ -10,15 +10,18 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.HealthPetApp">
         <activity
+            android:name=".Profile"
+            android:exported="true" />
+        <activity
             android:name=".MedicalHistory"
             android:exported="true"
-            android:parentActivityName=".MenuActivity"
-            android:label="Medical History" />
+            android:label="Medical History"
+            android:parentActivityName=".MenuActivity" />
         <activity
             android:name=".MyContact"
             android:exported="true"
-            android:parentActivityName=".MenuActivity"
-            android:label="My Contact" />
+            android:label="My Contact"
+            android:parentActivityName=".MenuActivity" />
         <activity
             android:name=".AddContact"
             android:exported="true"
@@ -43,8 +46,8 @@
         <activity
             android:name=".MyAppointment"
             android:exported="true"
-            android:parentActivityName=".MenuActivity"
-            android:label="My Appointment"/>
+            android:label="My Appointment"
+            android:parentActivityName=".MenuActivity" />
         <activity
             android:name=".MenuActivity"
             android:exported="true"
