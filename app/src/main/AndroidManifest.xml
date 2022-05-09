@@ -10,8 +10,15 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.HealthPetApp">
         <activity
+            android:name=".Settings"
+            android:exported="true"
+            android:label="Settings"
+            android:parentActivityName=".MenuActivity" />
+        <activity
             android:name=".Profile"
-            android:exported="true" />
+            android:exported="true"
+            android:label="Profile"
+            android:parentActivityName=".MenuActivity" />
         <activity
             android:name=".MedicalHistory"
             android:exported="true"

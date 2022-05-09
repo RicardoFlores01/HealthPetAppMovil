@@ -13,6 +13,7 @@
         <entry key="..\:/Users/52449/AndroidStudioProjects/HealthPetApp/app/src/main/res/layout/activity_my_contact.xml" value="0.25" />
         <entry key="..\:/Users/52449/AndroidStudioProjects/HealthPetApp/app/src/main/res/layout/activity_profile.xml" value="0.20260416666666667" />
         <entry key="..\:/Users/52449/AndroidStudioProjects/HealthPetApp/app/src/main/res/layout/activity_register.xml" value="0.1" />
+        <entry key="..\:/Users/52449/AndroidStudioProjects/HealthPetApp/app/src/main/res/layout/activity_settings.xml" value="0.25" />
         <entry key="..\:/Users/52449/AndroidStudioProjects/HealthPetApp/app/src/main/res/layout/activity_shedule_appointment.xml" value="0.22" />
         <entry key="..\:/Users/52449/AndroidStudioProjects/HealthPetApp/app/src/main/res/layout/activity_two_step_verification.xml" value="0.25" />
         <entry key="..\:/Users/52449/AndroidStudioProjects/HealthPetApp/app/src/main/res/layout/app_bar_menu.xml" value="0.15" />
@@ -23,10 +24,18 @@
         <entry key="..\:/Users/52449/AndroidStudioProjects/HealthPetApp/app/src/main/res/layout/nav_header_menu.xml" value="0.25" />
         <entry key="..\:/Users/52449/AndroidStudioProjects/HealthPetApp/app/src/main/res/menu/activity_main_drawer.xml" value="0.25" />
         <entry key="..\:/Users/52449/AndroidStudioProjects/HealthPetApp/app/src/main/res/menu/menu.xml" value="0.20260416666666667" />
+        <entry key="..\:/abraham/Documentos/Desarrollo moviles/andorid/HealthPetAppMovil/app/src/main/res/layout/activity_add_contact.xml" value="0.20416666666666666" />
+        <entry key="..\:/abraham/Documentos/Desarrollo moviles/andorid/HealthPetAppMovil/app/src/main/res/layout/activity_login.xml" value="0.20416666666666666" />
+        <entry key="..\:/abraham/Documentos/Desarrollo moviles/andorid/HealthPetAppMovil/app/src/main/res/layout/activity_main.xml" value="0.20416666666666666" />
+        <entry key="..\:/abraham/Documentos/Desarrollo moviles/andorid/HealthPetAppMovil/app/src/main/res/layout/activity_menu.xml" value="0.20416666666666666" />
+        <entry key="..\:/abraham/Documentos/Desarrollo moviles/andorid/HealthPetAppMovil/app/src/main/res/layout/activity_my_appointment.xml" value="0.20416666666666666" />
+        <entry key="..\:/abraham/Documentos/Desarrollo moviles/andorid/HealthPetAppMovil/app/src/main/res/layout/activity_shedule_appointment.xml" value="0.20416666666666666" />
+        <entry key="..\:/abraham/Documentos/Desarrollo moviles/andorid/HealthPetAppMovil/app/src/main/res/layout/fragment_home.xml" value="0.20416666666666666" />
+        <entry key="..\:/abraham/Documentos/Desarrollo moviles/andorid/HealthPetAppMovil/app/src/main/res/layout/nav_header_menu.xml" value="0.20416666666666666" />
       </map>
     </option>
   </component>
-  <component name="ProjectRootManager" version="2" languageLevel="JDK_11" default="true" project-jdk-name="1.8" project-jdk-type="JavaSDK">
+  <component name="ProjectRootManager" version="2" languageLevel="JDK_11" project-jdk-name="1.8" project-jdk-type="JavaSDK">
     <output url="file://$PROJECT_DIR$/build/classes" />
   </component>
   <component name="ProjectType">
