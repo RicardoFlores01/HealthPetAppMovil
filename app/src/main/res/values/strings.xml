@@ -86,6 +86,13 @@
     <string name="email_profile">ricardo1@gmail.com</string>
     <string name="password_profile">*********</string>
     <string name="phone_profile">4495777823</string>
+    <string name="Save_profile">Save the data profile</string>
+
+    <string name="account">Account</string>
+    <string name="language">Language</string>
+    <string name="help">Help</string>
+    <string name="aboutus">About us</string>
+    <string name="logout">Logout</string>
 
     <string name="title_activity_menu">HealthPet</string>
 </resources>
