@@ -94,5 +94,25 @@
     <string name="aboutus">About us</string>
     <string name="logout">Logout</string>
 
+    <string name="BtnLanguage">Save the language</string>
+    <string name="spanish">Spanish</string>
+    <string name="english">English</string>
+
+    <string name="save_contact_boton">Save the contact</string>
+
+    <string name="help_text">If you have problems with the application communicate through our WhatsApp service sending the screenshot along with your problem and we will solve it. It is also open for feedback.</string>
+
+    <string name="myappointment_activity">My Appointment</string>
+    <string name="mycontact_activity">My Contact</string>
+    <string name="medicalhistory_activity">Medical History</string>
+    <string name="profile_activity">Profile</string>
+    <string name="settings_activity">Settings</string>
+    <string name="language_activity">Language</string>
+    <string name="help_activity">Help</string>
+    <string name="about_activity">About</string>
+    <string name="programarcita_activity">Shedule appointment</string>
+
+
     <string name="title_activity_menu">HealthPet</string>
+
 </resources>

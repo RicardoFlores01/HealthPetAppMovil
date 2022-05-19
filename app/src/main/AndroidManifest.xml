@@ -10,24 +10,39 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.HealthPetApp">
         <activity
+            android:name=".About"
+            android:exported="true"
+            android:label="@string/about_activity"
+            android:parentActivityName=".MenuActivity"/>
+        <activity
+            android:name=".Help"
+            android:exported="true"
+            android:label="@string/help_activity"
+            android:parentActivityName=".MenuActivity" />
+        <activity
+            android:name=".Language"
+            android:exported="true"
+            android:label="@string/language_activity"
+            android:parentActivityName=".MenuActivity" />
+        <activity
             android:name=".Settings"
             android:exported="true"
-            android:label="Settings"
+            android:label="@string/settings_activity"
             android:parentActivityName=".MenuActivity" />
         <activity
             android:name=".Profile"
             android:exported="true"
-            android:label="Profile"
+            android:label="@string/profile_activity"
             android:parentActivityName=".MenuActivity" />
         <activity
             android:name=".MedicalHistory"
             android:exported="true"
-            android:label="Medical History"
+            android:label="@string/medicalhistory_activity"
             android:parentActivityName=".MenuActivity" />
         <activity
             android:name=".MyContact"
             android:exported="true"
-            android:label="My Contact"
+            android:label="@string/mycontact_activity"
             android:parentActivityName=".MenuActivity" />
         <activity
             android:name=".AddContact"
@@ -36,7 +51,9 @@
             android:parentActivityName=".MenuActivity" />
         <activity
             android:name=".shedule_appointment"
-            android:exported="true" />
+            android:exported="true"
+            android:label="@string/programarcita_activity"
+            android:parentActivityName=".MenuActivity" />
         <activity
             android:name=".LoginActivity"
             android:exported="true"
@@ -53,7 +70,7 @@
         <activity
             android:name=".MyAppointment"
             android:exported="true"
-            android:label="My Appointment"
+            android:label="@string/myappointment_activity"
             android:parentActivityName=".MenuActivity" />
         <activity
             android:name=".MenuActivity"
