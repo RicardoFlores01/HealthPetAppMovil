@@ -1,0 +1,117 @@
+<resources>
+    <string name="app_name">HealthPet</string>
+
+    <string name="missyou">Te extrañamos</string>
+    <string name="login">Iniciar sesión</string>
+    <string name="email">Correo Electrónico</string>
+    <string name="password">Contraseña</string>
+    <string name="link_register">Si no tienes cuenta registráte aquí</string>
+    <string name="register">Registrarse</string>
+    <string name="username">Usuario</string>
+    <string name="phone">Teléfono</string>
+    <string name="Welcome_to_healthpet">Bienvenido a HealthPet</string>
+    <string name="Two_Step_Verification">Verificacion dos pasos</string>
+    <string name="descVerification">Un código de verificación fue enviado a tus notificaciones..</string>
+    <string name="code">Ingresa el código de 6 dígitos</string>
+    <string name="btnVerification">Verificar</string>
+
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+    <string name="nav_header_title">Ricardo Flores</string>
+    <string name="nav_header_subtitle">HealthPet</string>
+    <string name="nav_header_desc">Navigation header</string>
+    <string name="action_settings">Ajustes</string>
+
+    <string name="menu_home">Inicio</string>
+    <string name="menu_gallery">Contactos</string>
+    <string name="menu_slideshow">Mascotas</string>
+    <string name="menu_profile">Perfil</string>
+    <string name="menu_settings">Ajustes</string>
+    <string name="menu_rateus">Calificanos</string>
+
+    <string name="title_dates">Mis citas</string>
+    <string name="title_date">Cita médica para revisar al perro</string>
+    <string name="date">15/02/22</string>
+    <string name="hour">15:00 pm</string>
+    <string name="description">Detalles de la cita si es un paciente de toda la semana o si tiene una vacuna especial que administrar.</string>
+
+    <string name="service">Servicio de la cita</string>
+    <string name="date_service">Fecha de la cita</string>
+    <string name="time_appointment">Hora de la cita</string>
+    <string name="person">Tienes una cita con</string>
+    <string name="person_name">Ricardo Flores</string>
+    <string name="descr">Descripción</string>
+    <string name="call">Llamar al usuario</string>
+
+
+    <string name="name_pet">Nombre del propietario</string>
+    <string name="remind">Recuérdame</string>
+    <string name="shedule">Programar el día y la hora</string>
+    <string name="type">Escribe algo aquí</string>
+    <string name="calendar">Calendario</string>
+    <string name="time">Hora</string>
+    <string name="save">Guardar la cita</string>
+
+    <string name="name_owner1">Ramon Padilla</string>
+    <string name="contacts">Mis contactos</string>
+    <string name="name">Nombre</string>
+    <string name="address">Dirección</string>
+    <string name="save_contact">Guardar el contacto</string>
+
+    <string name="contact">Contacto</string>
+    <string name="phone_num">4495777823</string>
+    <string name="address_te">Dzilam 209 Infonavit M.</string>
+    <string name="email_te">ricardo@gmail.com</string>
+
+    <string name="name_pet_pets">Simba</string>
+    <string name="name_pet_pets1">Nombre</string>
+    <string name="race">Chihuahueño</string>
+    <string name="age">4 años</string>
+    <string name="weight">3 kg</string>
+    <string name="race1">Raza</string>
+    <string name="age1">Edad</string>
+    <string name="weight1">Peso</string>
+    <string name="name_own">Ricardo - </string>
+
+    <string name="allergies">Alergias o recomendaciones</string>
+    <string name="desc_allergies">Las recomendaciones para la mascota es que no esté mucho tiempo en el polvo debido a la infección que tiene.</string>
+    <string name="tratments">Tratamientos</string>
+    <string name="tablet1">Pastilla #1 - 07:00 AM</string>
+    <string name="tablet2">Pastilla #2 - 02:00 PM</string>
+    <string name="tablet3">Pastilla #3 - 08:00 PM</string>
+    <string name="clinical">Historial Clínico</string>
+    <string name="date_clinical">Marzo 09 2022</string>
+
+    <string name="name_profile">Ricardo Flores</string>
+    <string name="email_profile">ricardo1@gmail.com</string>
+    <string name="password_profile">*********</string>
+    <string name="phone_profile">4495777823</string>
+    <string name="Save_profile">Guardar los datos del perfil</string>
+
+    <string name="account">Cuenta</string>
+    <string name="language">Lenguaje</string>
+    <string name="help">Ayuda</string>
+    <string name="aboutus">Acerda de nosotros</string>
+    <string name="logout">Cerrar sesión</string>
+
+    <string name="BtnLanguage">Guardar el lenguaje</string>
+    <string name="spanish">Español</string>
+    <string name="english">Inglés</string>
+
+    <string name="save_contact_boton">Guardar contacto</string>
+
+    <string name="help_text">Si tienes problemas con la aplicación comunícate a través de nuestro servicio de WhatsApp enviando la captura de pantalla junto con tu problema y lo solucionaremos. También está abierto a comentarios.</string>
+
+    <string name="myappointment_activity">Mis cita</string>
+    <string name="mycontact_activity">Mi Contacto</string>
+    <string name="medicalhistory_activity">Historial Clinico</string>
+    <string name="profile_activity">Perfil</string>
+    <string name="settings_activity">Ajustes</string>
+    <string name="language_activity">Lenguaje</string>
+    <string name="help_activity">Ayuda</string>
+    <string name="about_activity">Acerca</string>
+    <string name="programarcita_activity">Programar Cita</string>
+
+    <string name="title_activity_menu">HealthPet</string>
+
+</resources>

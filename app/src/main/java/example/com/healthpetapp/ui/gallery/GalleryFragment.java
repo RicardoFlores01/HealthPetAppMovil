@@ -13,10 +13,14 @@ import androidx.fragment.app.Fragment;
 import androidx.lifecycle.Observer;
 import androidx.lifecycle.ViewModelProvider;
 
+import com.google.android.material.floatingactionbutton.FloatingActionButton;
+
+import example.com.healthpetapp.AddContact;
 import example.com.healthpetapp.MyAppointment;
 import example.com.healthpetapp.MyContact;
 import example.com.healthpetapp.R;
 import example.com.healthpetapp.databinding.FragmentGalleryBinding;
+import example.com.healthpetapp.shedule_appointment;
 
 public class GalleryFragment extends Fragment {
 
@@ -24,6 +28,7 @@ public class GalleryFragment extends Fragment {
     private FragmentGalleryBinding binding;
 
     TextView contact;
+    FloatingActionButton floating_add;
 
     public View onCreateView(@NonNull LayoutInflater inflater,
                              ViewGroup container, Bundle savedInstanceState) {
@@ -38,6 +43,15 @@ public class GalleryFragment extends Fragment {
             @Override
             public void onClick(View view){
                 Intent intent = new Intent(getActivity(), MyContact.class);
+                startActivity(intent);
+            }
+        });
+
+        floating_add = (FloatingActionButton) root.findViewById(R.id.floatingActionButton);
+        floating_add.setOnClickListener(new View.OnClickListener(){
+            @Override
+            public void onClick(View view){
+                Intent intent = new Intent(getActivity(), AddContact.class);
                 startActivity(intent);
             }
         });
