@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "183785244919",
+    "project_id": "healthpetapp",
+    "storage_bucket": "healthpetapp.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:183785244919:android:db2cd0d3a0c58ce5442bf2",
+        "android_client_info": {
+          "package_name": "example.com.healthpetapp"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "183785244919-48tk1modc8g8n3sgob1j2nnp87orijcd.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDQ9xvtMz7z7OxDFGzJSwO24HRkr0xylDo"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "183785244919-48tk1modc8g8n3sgob1j2nnp87orijcd.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

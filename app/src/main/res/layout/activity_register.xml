@@ -26,7 +26,7 @@
 
     <EditText
         android:id="@+id/username"
-        android:layout_width="300dp"
+        android:layout_width="280dp"
         android:layout_height="55dp"
         android:layout_marginStart="15dp"
         android:layout_marginTop="25dp"
@@ -56,7 +56,7 @@
         android:layout_marginTop="20dp"
         android:ems="50"
         android:hint="@string/password"
-        android:inputType="text"
+        android:inputType="textPassword"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/email" />
 
