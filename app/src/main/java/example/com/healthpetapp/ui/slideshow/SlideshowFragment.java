@@ -13,9 +13,13 @@ import androidx.fragment.app.Fragment;
 import androidx.lifecycle.Observer;
 import androidx.lifecycle.ViewModelProvider;
 
+import com.google.android.material.floatingactionbutton.FloatingActionButton;
+
+import example.com.healthpetapp.AddContact;
 import example.com.healthpetapp.MedicalHistory;
 import example.com.healthpetapp.MyAppointment;
 import example.com.healthpetapp.R;
+import example.com.healthpetapp.add_pet;
 import example.com.healthpetapp.databinding.FragmentSlideshowBinding;
 
 public class SlideshowFragment extends Fragment {
@@ -24,6 +28,7 @@ public class SlideshowFragment extends Fragment {
     private FragmentSlideshowBinding binding;
 
     TextView name_pet;
+    FloatingActionButton floating_add;
 
     public View onCreateView(@NonNull LayoutInflater inflater,
                              ViewGroup container, Bundle savedInstanceState) {
@@ -41,6 +46,16 @@ public class SlideshowFragment extends Fragment {
                 startActivity(intent);
             }
         });
+
+        floating_add = (FloatingActionButton) root.findViewById(R.id.floatingActionButton);
+        floating_add.setOnClickListener(new View.OnClickListener(){
+            @Override
+            public void onClick(View view){
+                Intent intent = new Intent(getActivity(), add_pet.class);
+                startActivity(intent);
+            }
+        });
+
 
         //final TextView textView = binding.textSlideshow;
         slideshowViewModel.getText().observe(getViewLifecycleOwner(), new Observer<String>() {

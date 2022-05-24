@@ -112,6 +112,8 @@
     <string name="about_activity">Acerca</string>
     <string name="programarcita_activity">Programar Cita</string>
 
+    <string name="save_pet">Guardar mascota</string>
+
     <string name="title_activity_menu">HealthPet</string>
 
 </resources>
