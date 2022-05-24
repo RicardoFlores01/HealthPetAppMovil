@@ -3,7 +3,7 @@ plugins {
     //: 'com.google.gms.google-services'
 }
 
-apply plugin: 'com.google.gms.google-services'
+//apply plugin: 'com.google.gms.google-services'
 
 android {
     compileSdk 31
