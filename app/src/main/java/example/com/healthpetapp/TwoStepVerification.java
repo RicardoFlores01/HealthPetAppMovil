@@ -41,21 +41,22 @@ public class TwoStepVerification extends AppCompatActivity {
         int val = random.nextInt(1000);
         String codigo = Integer.toString(val);
 
-        NotificationCompat.Builder builder = new NotificationCompat.Builder(this, "code").setSmallIcon(android.R.drawable.stat_notify_sync)
+        NotificationCompat.Builder builder = new NotificationCompat.Builder(this, "code").setSmallIcon(R.drawable.ic_baseline_pets_24)
                 .setContentTitle("Code Verification").setContentText("Codigo es " + codigo);
 
         notification = builder.build();
         notificationManagerCompat = notificationManagerCompat.from(this);
 
+        notificationManagerCompat.notify(1, notification);
+        //Toast.makeText(TwoStepVerification.this,codigo, Toast.LENGTH_LONG).show();
 
         verification = (Button) findViewById(R.id.btnVerification);
         verification.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                notificationManagerCompat.notify(1, notification);
                 String cod = code.getText().toString();
-
-                if(code.getText().toString()==codigo){
+                //Toast.makeText(TwoStepVerification.this,cod, Toast.LENGTH_LONG).show();
+                if(cod.equals(codigo)){
                     Intent intent = new Intent(TwoStepVerification.this, MenuActivity.class);
                     startActivity(intent);
                 } else {
