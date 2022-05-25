@@ -55,7 +55,7 @@
             android:layout_marginTop="10dp" />
 
         <EditText
-            android:id="@+id/ser_text"
+            android:id="@+id/phone_text"
             android:layout_width="300dp"
             android:layout_height="55dp"
             android:layout_marginStart="25dp"
@@ -75,12 +75,12 @@
             android:textColor="@color/black"
             android:textStyle="bold"
             app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toBottomOf="@id/ser_text"
+            app:layout_constraintTop_toBottomOf="@id/phone_text"
             android:layout_marginStart="25dp"
             android:layout_marginTop="10dp" />
 
         <EditText
-            android:id="@+id/desc_text"
+            android:id="@+id/adress"
             android:layout_width="300dp"
             android:layout_height="55dp"
             android:layout_marginStart="25dp"
@@ -100,12 +100,12 @@
             android:textColor="@color/black"
             android:textStyle="bold"
             app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toBottomOf="@id/desc_text"
+            app:layout_constraintTop_toBottomOf="@id/adress"
             android:layout_marginStart="25dp"
             android:layout_marginTop="10dp" />
 
         <EditText
-            android:id="@+id/remind_text"
+            android:id="@+id/email_contact"
             android:layout_width="300dp"
             android:layout_height="55dp"
             android:layout_marginStart="25dp"
@@ -148,7 +148,7 @@
             android:textSize="14dp"
             app:iconTint="#3F51B5"
             app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toBottomOf="@+id/remind_text" />
+            app:layout_constraintTop_toBottomOf="@+id/email_contact" />
 
         <Button
             android:id="@+id/tim"
@@ -160,7 +160,7 @@
             android:textColor="@color/black"
             android:textSize="14dp"
             app:layout_constraintStart_toEndOf="@+id/cal"
-            app:layout_constraintTop_toBottomOf="@+id/remind_text" />
+            app:layout_constraintTop_toBottomOf="@+id/email_contact" />
 
         <Button
             android:id="@+id/btnSaveDate"
