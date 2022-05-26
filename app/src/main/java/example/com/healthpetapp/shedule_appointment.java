@@ -14,16 +14,17 @@ import android.widget.Toast;
 
 import java.util.Calendar;
 
+import example.com.healthpetapp.db.DBHelper;
 import example.com.healthpetapp.db.DbCites;
 
 public class shedule_appointment extends AppCompatActivity implements View.OnClickListener {
 
-    Button btnCalendar, btnTime;
+    Button btnCalendar, btnTime, btnSaveDate;
     EditText calendar_text, time_text;
     private  int dia, mes, año, hora, minutos;
 
-    Button btnSaveDate;
     EditText name, ser_text, desc_text, remind_text;
+
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -34,35 +35,34 @@ public class shedule_appointment extends AppCompatActivity implements View.OnCli
         btnTime = (Button) findViewById(R.id.tim);
         calendar_text = (EditText) findViewById(R.id.calendar_text);
         time_text = (EditText) findViewById(R.id.time_text);
-
-        name = (EditText) findViewById(R.id.name);
-        ser_text = (EditText) findViewById(R.id.phone_text);
-        desc_text = (EditText) findViewById(R.id.adress);
-        remind_text = (EditText) findViewById(R.id.email_contact);
-        btnSaveDate = (Button) findViewById(R.id.btnSaveDate);
-
         btnCalendar.setOnClickListener(this);
         btnTime.setOnClickListener(this);
+
+        name = (EditText) findViewById(R.id.name);
+        ser_text = (EditText) findViewById(R.id.ser_text);
+        desc_text = (EditText) findViewById(R.id.desc_text);
+        remind_text = (EditText) findViewById(R.id.remind_text);
+        btnSaveDate = (Button) findViewById(R.id.btnSaveDate);
 
         btnSaveDate.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
                 DbCites dbCites = new DbCites(shedule_appointment.this);
-               long id = dbCites.insertarCita(name.getText().toString(), ser_text.getText().toString(), desc_text.getText().toString(), remind_text.getText().toString(), calendar_text.getText().toString(), time_text.getText().toString());
+               long id = dbCites.instertaCita(name.getText().toString(), ser_text.getText().toString(), desc_text.getText().toString(), remind_text.getText().toString(), calendar_text.getText().toString(), time_text.getText().toString());
 
-                if(id>0){
-                    Toast.makeText(shedule_appointment.this, "CITA GUARDADA", Toast.LENGTH_SHORT).show();
+                if (id > 0){
+                    Toast.makeText(shedule_appointment.this, "Cita guardada", Toast.LENGTH_LONG).show();
                     limpiar();
-
-                }else{
-                    Toast.makeText(shedule_appointment.this, "ERROR AL GUARDAR", Toast.LENGTH_SHORT).show();
+                } else{
+                    Toast.makeText(shedule_appointment.this, "ERROR al guardar cita", Toast.LENGTH_LONG).show();
                 }
+
+
             }
         });
 
 
     }
-
     private void limpiar(){
         name.setText("");
         ser_text.setText("");
@@ -71,6 +71,10 @@ public class shedule_appointment extends AppCompatActivity implements View.OnCli
         calendar_text.setText("");
         time_text.setText("");
     }
+
+
+
+
 
     @Override
     public void onClick(View v) {

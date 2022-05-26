@@ -15,15 +15,13 @@ import android.widget.Toast;
 
 import androidx.appcompat.app.AppCompatActivity;
 
-import example.com.healthpetapp.db.SQLiteHelper;
-
 public class LoginActivity extends AppCompatActivity {
 
     Button login;
     TextView register;
     EditText Email, Password;
 
-    /*String EmailHolder, PasswordHolder;
+    String EmailHolder, PasswordHolder;
     Boolean EditTextEmptyHolder;
     SQLiteDatabase sqLiteDatabaseObj;
     SQLiteHelper sqLiteHelper;
@@ -34,7 +32,7 @@ public class LoginActivity extends AppCompatActivity {
     SharedPreferences sharedpreferences;
     private static final String SHARED_PREF_NAME = "mypref";
     private static final String KEY_EMAIL = "email";
-    private static final String KEY_PASSWORD = "password";*/
+    private static final String KEY_PASSWORD = "password";
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -44,7 +42,7 @@ public class LoginActivity extends AppCompatActivity {
         Email = (EditText) findViewById(R.id.emailInput);
         Password = (EditText) findViewById(R.id.passwordInput);
 
-        /*sharedpreferences = getSharedPreferences(SHARED_PREF_NAME, MODE_PRIVATE);
+        sharedpreferences = getSharedPreferences(SHARED_PREF_NAME, MODE_PRIVATE);
         String email = sharedpreferences.getString(KEY_EMAIL, null);
         String user = sharedpreferences.getString(KEY_PASSWORD, null);
         if(email!=null){
@@ -53,22 +51,21 @@ public class LoginActivity extends AppCompatActivity {
         }
 
         sqLiteHelper = new SQLiteHelper(this);
-        */
 
         login = (Button) findViewById(R.id.btnLogin);
         login.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-               /* // Calling EditText is empty or no method.
+                // Calling EditText is empty or no method.
                 CheckEditTextStatus();
                 // Calling login method.
                 LoginFunction();
                 SharedPreferences.Editor editor = sharedpreferences.edit();
                 editor.putString(KEY_EMAIL, Email.getText().toString());
                 editor.putString(KEY_PASSWORD, Password.getText().toString());
-                editor.apply();*/
-                Intent intent = new Intent(LoginActivity.this, MenuActivity.class);
-                startActivity(intent);
+                editor.apply();
+                //Intent intent = new Intent(LoginActivity.this, MenuActivity.class);
+                //startActivity(intent);
             }
         });
 
@@ -82,19 +79,18 @@ public class LoginActivity extends AppCompatActivity {
         });
     }
 
-    /*
     @SuppressLint("Range")
     private void LoginFunction() {
         if (EditTextEmptyHolder) {
             // Opening SQLite database write permission.
             sqLiteDatabaseObj = sqLiteHelper.getWritableDatabase();
             // Adding search email query to cursor.
-           // cursor = sqLiteDatabaseObj.query(SQLiteHelper.TABLE_NAME, null, " " + SQLiteHelper.Table_Column_2_Email + "=?", new String[]{EmailHolder}, null, null, null);
+            cursor = sqLiteDatabaseObj.query(SQLiteHelper.TABLE_NAME, null, " " + SQLiteHelper.Table_Column_2_Email + "=?", new String[]{EmailHolder}, null, null, null);
             while (cursor.moveToNext()) {
                 if (cursor.isFirst()) {
                     cursor.moveToFirst();
                     // Storing Password associated with entered email.
-                  //  TempUser = cursor.getString(cursor.getColumnIndex(SQLiteHelper.Table_Column_3_Password));
+                    TempUser = cursor.getString(cursor.getColumnIndex(SQLiteHelper.Table_Column_3_Password));
                     // Closing cursor.
                     cursor.close();
                 }
@@ -135,6 +131,6 @@ public class LoginActivity extends AppCompatActivity {
             EditTextEmptyHolder = true ;
         }
     }
-    */
+
 
 }

@@ -1,34 +1,33 @@
 {
   "project_info": {
-    "project_number": "573513873084",
-    "firebase_url": "https://healthpet-2daee-default-rtdb.firebaseio.com",
-    "project_id": "healthpet-2daee",
-    "storage_bucket": "healthpet-2daee.appspot.com"
+    "project_number": "419386930194",
+    "project_id": "healthpet-7715f",
+    "storage_bucket": "healthpet-7715f.appspot.com"
   },
   "client": [
     {
       "client_info": {
-        "mobilesdk_app_id": "1:573513873084:android:dd565f6f8a69b00b5ac2b9",
+        "mobilesdk_app_id": "1:419386930194:android:f35d9c9bc75ecca39e14cb",
         "android_client_info": {
-          "package_name": "com.healthpet.app"
+          "package_name": "example.com.healthpetapp"
         }
       },
       "oauth_client": [
         {
-          "client_id": "573513873084-1u2l7pul3sp9jodm1vbvgrs55b7tbiff.apps.googleusercontent.com",
+          "client_id": "419386930194-gg4ep8vqdddilu1uq0q0ob9n0eqklr56.apps.googleusercontent.com",
           "client_type": 3
         }
       ],
       "api_key": [
         {
-          "current_key": "AIzaSyBw88llR0LIK1b5KftLmEKU5AxjTiH8-ms"
+          "current_key": "AIzaSyAmc2li3zHwmHEmbA2k2WVGxKm_TUmQe-g"
         }
       ],
       "services": {
         "appinvite_service": {
           "other_platform_oauth_client": [
             {
-              "client_id": "573513873084-1u2l7pul3sp9jodm1vbvgrs55b7tbiff.apps.googleusercontent.com",
+              "client_id": "419386930194-gg4ep8vqdddilu1uq0q0ob9n0eqklr56.apps.googleusercontent.com",
               "client_type": 3
             }
           ]

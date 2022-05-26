@@ -55,7 +55,7 @@
             android:layout_marginTop="10dp" />
 
         <EditText
-            android:id="@+id/phone_text"
+            android:id="@+id/ser_text"
             android:layout_width="300dp"
             android:layout_height="55dp"
             android:layout_marginStart="25dp"
@@ -75,12 +75,12 @@
             android:textColor="@color/black"
             android:textStyle="bold"
             app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toBottomOf="@id/phone_text"
+            app:layout_constraintTop_toBottomOf="@id/ser_text"
             android:layout_marginStart="25dp"
             android:layout_marginTop="10dp" />
 
         <EditText
-            android:id="@+id/adress"
+            android:id="@+id/desc_text"
             android:layout_width="300dp"
             android:layout_height="55dp"
             android:layout_marginStart="25dp"
@@ -100,12 +100,12 @@
             android:textColor="@color/black"
             android:textStyle="bold"
             app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toBottomOf="@id/adress"
+            app:layout_constraintTop_toBottomOf="@id/desc_text"
             android:layout_marginStart="25dp"
             android:layout_marginTop="10dp" />
 
         <EditText
-            android:id="@+id/email_contact"
+            android:id="@+id/remind_text"
             android:layout_width="300dp"
             android:layout_height="55dp"
             android:layout_marginStart="25dp"
@@ -148,7 +148,7 @@
             android:textSize="14dp"
             app:iconTint="#3F51B5"
             app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toBottomOf="@+id/email_contact" />
+            app:layout_constraintTop_toBottomOf="@+id/remind_text" />
 
         <Button
             android:id="@+id/tim"
@@ -160,19 +160,19 @@
             android:textColor="@color/black"
             android:textSize="14dp"
             app:layout_constraintStart_toEndOf="@+id/cal"
-            app:layout_constraintTop_toBottomOf="@+id/email_contact" />
+            app:layout_constraintTop_toBottomOf="@+id/remind_text" />
 
         <Button
             android:id="@+id/btnSaveDate"
             android:layout_width="300dp"
             android:layout_height="60dp"
-            android:text="@string/save"
+            android:layout_marginStart="16dp"
+            android:layout_marginTop="16dp"
             android:backgroundTint="#FFBA5C"
-            app:cornerRadius="20dp"
+            android:text="@string/save"
             android:textColor="@color/black"
             android:textStyle="bold"
-            android:layout_marginStart="15dp"
-            android:layout_marginTop="20dp"
+            app:cornerRadius="20dp"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toBottomOf="@+id/calendar_text" />
 

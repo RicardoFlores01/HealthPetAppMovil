@@ -65,7 +65,7 @@
             android:layout_marginTop="10dp" />
 
         <EditText
-            android:id="@+id/phone_text"
+            android:id="@+id/ser_text"
             android:layout_width="300dp"
             android:layout_height="55dp"
             android:layout_marginStart="25dp"
@@ -87,12 +87,12 @@
             android:textSize="17sp"
             app:flow_verticalAlign="top"
             app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toBottomOf="@id/phone_text"
+            app:layout_constraintTop_toBottomOf="@id/ser_text"
             android:layout_marginStart="25dp"
             android:layout_marginTop="10dp" />
 
         <EditText
-            android:id="@+id/adress"
+            android:id="@+id/desc_text"
             android:layout_width="300dp"
             android:layout_height="55dp"
             android:layout_marginStart="25dp"
@@ -114,12 +114,12 @@
             android:textSize="16sp"
             app:flow_verticalAlign="top"
             app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toBottomOf="@id/adress"
+            app:layout_constraintTop_toBottomOf="@id/desc_text"
             android:layout_marginStart="25dp"
             android:layout_marginTop="10dp" />
 
         <EditText
-            android:id="@+id/email_contact"
+            android:id="@+id/remind_text"
             android:layout_width="300dp"
             android:layout_height="55dp"
             android:layout_marginStart="25dp"
@@ -143,7 +143,7 @@
             android:text="@string/Save_profile"
             app:cornerRadius="20dp"
             app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toBottomOf="@+id/email_contact" />
+            app:layout_constraintTop_toBottomOf="@+id/remind_text" />
 
     </androidx.constraintlayout.widget.ConstraintLayout>
 

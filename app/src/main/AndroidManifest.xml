@@ -10,6 +10,9 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.HealthPetApp">
         <activity
+            android:name=".VerCitas"
+            android:exported="false" />
+        <activity
             android:name=".add_pet"
             android:exported="true" />
         <activity

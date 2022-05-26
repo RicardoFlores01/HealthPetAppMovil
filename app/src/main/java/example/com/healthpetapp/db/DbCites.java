@@ -6,20 +6,21 @@ import android.database.sqlite.SQLiteDatabase;
 
 import androidx.annotation.Nullable;
 
-public class DbCites extends SQLiteHelper{
+public class DbCites extends DBHelper {
+
     Context context;
+
     public DbCites(@Nullable Context context) {
         super(context);
         this.context = context;
-
     }
 
-    public long insertarCita(String name, String service, String description, String remind, String fecha, String hora){
-        long id=0;
-        try {
+    public Long instertaCita(String name, String service, String description, String remind, String fecha, String hora) {
+        long id = 0;
 
-            SQLiteHelper sqLiteHelper = new SQLiteHelper(context);
-            SQLiteDatabase db = sqLiteHelper.getWritableDatabase();
+        try {
+            DBHelper dbHelper = new DBHelper(context);
+            SQLiteDatabase db = dbHelper.getWritableDatabase();
 
             ContentValues values = new ContentValues();
             values.put("name", name);
@@ -30,9 +31,12 @@ public class DbCites extends SQLiteHelper{
             values.put("hora", hora);
 
             id = db.insert(TABLE_CITES, null, values);
-        }catch (Exception ex){
+        } catch (Exception ex) {
             ex.toString();
         }
-        return id;
+
+        return null;
+
     }
+
 }
