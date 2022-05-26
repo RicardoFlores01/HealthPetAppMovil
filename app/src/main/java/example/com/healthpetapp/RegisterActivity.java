@@ -17,7 +17,7 @@ import com.google.firebase.auth.FirebaseAuth;
 import com.google.firebase.database.FirebaseDatabase;
 
 
-public class RegisterActivity extends AppCompatActivity implements View.OnClickListener {
+public class RegisterActivity extends AppCompatActivity {
 
     Button register;
     EditText Username, Email, Password, Phone;
@@ -41,15 +41,11 @@ public class RegisterActivity extends AppCompatActivity implements View.OnClickL
         register.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
+                registerUser();
                 Intent intent = new Intent(RegisterActivity.this, TwoStepVerification.class);
                 startActivity(intent);
             }
         });
-    }
-
-    @Override
-    public void onClick(View view) {
-        registerUser();
     }
 
     private void registerUser(){
