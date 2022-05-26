@@ -7,7 +7,7 @@
     tools:context=".AddContact">
 
     <TextView
-        android:id="@+id/name_pet"
+        android:id="@+id/name_contact"
         android:layout_width="359dp"
         android:layout_height="wrap_content"
         android:text="@string/name"
@@ -29,7 +29,7 @@
         android:hint="@string/type"
         android:inputType="text"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/name_pet" />
+        app:layout_constraintTop_toBottomOf="@+id/name_contact" />
 
     <TextView
         android:id="@+id/ser"
@@ -46,7 +46,7 @@
         android:layout_marginTop="10dp" />
 
     <EditText
-        android:id="@+id/ser_text"
+        android:id="@+id/phone_text"
         android:layout_width="300dp"
         android:layout_height="55dp"
         android:layout_marginStart="25dp"
@@ -66,12 +66,12 @@
         android:textColor="@color/black"
         android:textStyle="bold"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@id/ser_text"
+        app:layout_constraintTop_toBottomOf="@id/phone_text"
         android:layout_marginStart="25dp"
         android:layout_marginTop="10dp" />
 
     <EditText
-        android:id="@+id/desc_text"
+        android:id="@+id/adress"
         android:layout_width="300dp"
         android:layout_height="55dp"
         android:layout_marginStart="25dp"
@@ -91,12 +91,12 @@
         android:textColor="@color/black"
         android:textStyle="bold"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@id/desc_text"
+        app:layout_constraintTop_toBottomOf="@id/adress"
         android:layout_marginStart="25dp"
         android:layout_marginTop="10dp" />
 
     <EditText
-        android:id="@+id/remind_text"
+        android:id="@+id/email_contact"
         android:layout_width="300dp"
         android:layout_height="55dp"
         android:layout_marginStart="25dp"
@@ -107,7 +107,7 @@
         app:layout_constraintTop_toBottomOf="@+id/remi" />
 
     <Button
-        android:id="@+id/btnSaveDate"
+        android:id="@+id/btnSaveContact"
         android:layout_width="300dp"
         android:layout_height="60dp"
         android:text="@string/save_contact"
@@ -116,7 +116,7 @@
         android:layout_marginStart="15dp"
         android:layout_marginTop="20dp"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/remind_text" />
+        app:layout_constraintTop_toBottomOf="@+id/email_contact" />
 
 
 
