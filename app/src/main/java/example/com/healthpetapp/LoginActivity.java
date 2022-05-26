@@ -66,9 +66,9 @@ public class LoginActivity extends AppCompatActivity {
                 SharedPreferences.Editor editor = sharedpreferences.edit();
                 editor.putString(KEY_EMAIL, Email.getText().toString());
                 editor.putString(KEY_PASSWORD, Password.getText().toString());
-                editor.apply();
+                editor.apply();*/
                 Intent intent = new Intent(LoginActivity.this, MenuActivity.class);
-                startActivity(intent);*/
+                startActivity(intent);
             }
         });
 
