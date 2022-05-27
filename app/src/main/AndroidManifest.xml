@@ -3,6 +3,8 @@
     xmlns:tools="http://schemas.android.com/tools"
     package="example.com.healthpetapp">
 
+    <uses-permission android:name="android.permission.INTERNET" />
+
     <application
         android:allowBackup="true"
         android:icon="@mipmap/ic_launcher"
@@ -12,38 +14,50 @@
         android:theme="@style/Theme.HealthPetApp">
         <activity
             android:name=".VerCitas"
-            android:exported="false" />
+            android:exported="false"
+            android:label="@string/view_dates"
+            android:parentActivityName=".MenuActivity" />
+
         <activity
             android:name=".add_pet"
-            android:exported="true" />
+            android:exported="true"
+            android:label="@string/add_pet"
+            android:parentActivityName=".MenuActivity"/>
+
         <activity
             android:name=".Settings"
             android:exported="true"
-            android:label="Settings"
+            android:label="@string/settings"
             android:parentActivityName=".MenuActivity" />
+
         <activity
             android:name=".Profile"
             android:exported="true"
-            android:label="Profile"
+            android:label="@string/profile_activity"
             android:parentActivityName=".MenuActivity" />
+
         <activity
             android:name=".MedicalHistory"
             android:exported="true"
-            android:label="Medical History"
+            android:label="@string/medicalhistory_activity"
             android:parentActivityName=".MenuActivity" />
+
         <activity
             android:name=".MyContact"
             android:exported="true"
-            android:label="My Contact"
+            android:label="@string/mycontact_activity"
             android:parentActivityName=".MenuActivity" />
+
         <activity
             android:name=".AddContact"
             android:exported="true"
-            android:label="Add Contact"
+            android:label="@string/add_contact"
             android:parentActivityName=".MenuActivity" />
         <activity
             android:name=".shedule_appointment"
-            android:exported="true" />
+            android:exported="true"
+            android:label="@string/shedule_appointment"
+            android:parentActivityName=".MenuActivity" />
         <activity
             android:name=".LoginActivity"
             android:exported="true"
@@ -51,7 +65,7 @@
         <activity
             android:name=".TwoStepVerification"
             android:exported="true"
-            android:label="Two-Step Verification" />
+            android:label="@string/Two_Step_Verification" />
         <activity
             android:name=".RegisterActivity"
             android:exported="true"
@@ -60,7 +74,7 @@
         <activity
             android:name=".MyAppointment"
             android:exported="true"
-            android:label="My Appointment"
+            android:label="@string/myappointment_activity"
             android:parentActivityName=".MenuActivity" />
         <activity
             android:name=".MenuActivity"

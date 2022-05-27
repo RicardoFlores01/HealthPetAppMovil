@@ -112,6 +112,12 @@
     <string name="about_activity">Acerca</string>
     <string name="programarcita_activity">Programar Cita</string>
 
+    <string name="add_pet">Añadir Mascota</string>
+    <string name="settings">Ajutes</string>
+    <string name="view_dates">Ver Citas</string>
+    <string name="add_contact">Añadir contacto</string>
+    <string name="shedule_appointment">Programar cita</string>
+
     <string name="save_pet">Guardar mascota</string>
 
     <string name="title_activity_menu">HealthPet</string>

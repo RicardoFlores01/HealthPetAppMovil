@@ -113,5 +113,12 @@
     <string name="save_pet">Save pet</string>
 
     <string name="help_text">If you have problems with the application communicate through our WhatsApp service sending the screenshot along with your problem and we will solve it.</string>
+
+    <string name="add_pet">Add Pet</string>
+    <string name="settings">Settings</string>
+    <string name="view_dates">View Dates</string>
+    <string name="add_contact">Add Contact</string>
+    <string name="shedule_appointment">Shedule Appointment</string>
+
     <string name="title_activity_menu">HealthPet</string>
 </resources>
