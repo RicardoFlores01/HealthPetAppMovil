@@ -38,10 +38,10 @@
     <string name="service">Service of the appointment</string>
     <string name="date_service">Date of appointment</string>
     <string name="time_appointment">Time of appointment</string>
-    <string name="person">You have an appointment with</string>
+    <string name="person">You name of onw the pet</string>
     <string name="person_name">Ricardo Flores</string>
     <string name="descr">Description</string>
-    <string name="call">Call to user</string>
+    <string name="call">Modify</string>
 
 
     <string name="name_pet">Name of pet owner</string>
