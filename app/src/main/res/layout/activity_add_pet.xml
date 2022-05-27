@@ -21,7 +21,7 @@
         android:layout_marginTop="30dp" />
 
     <EditText
-        android:id="@+id/name_pet_pets_edit"
+        android:id="@+id/namePet"
         android:layout_width="300dp"
         android:layout_height="55dp"
         android:layout_marginStart="25dp"
@@ -41,12 +41,12 @@
         android:textColor="@color/black"
         android:textStyle="bold"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@id/name_pet_pets_edit"
+        app:layout_constraintTop_toBottomOf="@id/namePet"
         android:layout_marginStart="25dp"
         android:layout_marginTop="10dp" />
 
     <EditText
-        android:id="@+id/race_pet_edit"
+        android:id="@+id/racePet"
         android:layout_width="300dp"
         android:layout_height="55dp"
         android:layout_marginStart="25dp"
@@ -66,12 +66,12 @@
         android:textColor="@color/black"
         android:textStyle="bold"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@id/race_pet_edit"
+        app:layout_constraintTop_toBottomOf="@id/racePet"
         android:layout_marginStart="25dp"
         android:layout_marginTop="10dp" />
 
     <EditText
-        android:id="@+id/age_pets_edit"
+        android:id="@+id/agePet"
         android:layout_width="300dp"
         android:layout_height="55dp"
         android:layout_marginStart="25dp"
@@ -91,12 +91,12 @@
         android:textColor="@color/black"
         android:textStyle="bold"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@id/age_pets_edit"
+        app:layout_constraintTop_toBottomOf="@id/agePet"
         android:layout_marginStart="25dp"
         android:layout_marginTop="10dp" />
 
     <EditText
-        android:id="@+id/weight_pet_edit"
+        android:id="@+id/weightPet"
         android:layout_width="300dp"
         android:layout_height="55dp"
         android:layout_marginStart="25dp"
@@ -107,7 +107,7 @@
         app:layout_constraintTop_toBottomOf="@+id/weight_pet" />
 
     <Button
-        android:id="@+id/btnSaveDate"
+        android:id="@+id/btnSavePet"
         android:layout_width="300dp"
         android:layout_height="60dp"
         android:text="@string/save_pet"
@@ -116,6 +116,6 @@
         android:layout_marginStart="15dp"
         android:layout_marginTop="20dp"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/weight_pet_edit" />
+        app:layout_constraintTop_toBottomOf="@+id/weightPet" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
