@@ -1,39 +1,60 @@
 <?xml version="1.0" encoding="utf-8"?>
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
     android:layout_width="match_parent"
     android:layout_height="match_parent">
+
+    <TextView
+        android:id="@+id/viewService"
+        android:layout_width="match_parent"
+        android:layout_height="52dp"
+        android:background="#FFD699"
+        android:textColor="#0B0B0C"
+        android:textSize="22dp" />
+
+    <TextView
+        android:id="@+id/viewRedmin"
+        android:layout_width="match_parent"
+        android:layout_height="39dp"
+        android:gravity="center"
+        android:textColor="#555454"
+        android:textSize="18dp" />
 
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:orientation="vertical">
-
-        <TextView
-            android:id="@+id/viewService"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:textColor="#0B0B0C"
-            android:textSize="24sp" />
-
-        <TextView
-            android:id="@+id/viewRedmin"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:textColor="#555454"
-            android:textSize="20sp" />
+        android:orientation="horizontal">
 
         <TextView
             android:id="@+id/viewFecha"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
+            android:layout_width="110dp"
+            android:layout_height="32dp"
+            android:gravity="center"
             android:textColor="#555454"
-            android:textSize="12sp" />
+            android:textSize="14sp" />
 
         <TextView
             android:id="@+id/viewHora"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
+            android:layout_width="110dp"
+            android:layout_height="32dp"
+            android:gravity="center"
             android:textColor="#555454"
-            android:textSize="12sp" />
+            android:textSize="14sp" />
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+
+            <TextView
+                android:id="@+id/viewEspacio"
+                android:layout_width="match_parent"
+                android:layout_height="2dp"
+                android:background="@color/black" />
+        </LinearLayout>
+
+
     </LinearLayout>
+
 </LinearLayout>

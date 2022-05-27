@@ -16,7 +16,7 @@ public class DbCites extends DBHelper {
     Context context;
 
     public DbCites(@Nullable Context context) {
-        super(context, "t_cites", null, 1);
+        super(context);
         this.context = context;
     }
 
@@ -24,7 +24,7 @@ public class DbCites extends DBHelper {
         long id = 0;
 
         try {
-            DBHelper dbHelper = new DBHelper(context, "t_cites", null, 1);
+            DBHelper dbHelper = new DBHelper(context);
             SQLiteDatabase db = dbHelper.getWritableDatabase();
 
             ContentValues values = new ContentValues();
@@ -46,11 +46,11 @@ public class DbCites extends DBHelper {
 
     public ArrayList<Citas> mostrarCitas() {
 
-        DBHelper dbHelper = new DBHelper(context, "t_cites", null, 1);
+        DBHelper dbHelper = new DBHelper(context);
         SQLiteDatabase db = dbHelper.getWritableDatabase();
 
         ArrayList<Citas> listaCitas = new ArrayList<>();
-        Citas citas = null;
+        Citas cita = null;
 
         Cursor cursorCitas = null;
 
@@ -58,20 +58,46 @@ public class DbCites extends DBHelper {
 
         if (cursorCitas.moveToFirst()) {
             do {
-                citas = new Citas();
-                citas.setId(cursorCitas.getInt(0));
-                citas.setName(cursorCitas.getString(1));
-                citas.setService(cursorCitas.getString(2));
-                citas.setDescription(cursorCitas.getString(3));
-                citas.setRemind(cursorCitas.getString(4));
-                citas.setFecha(cursorCitas.getString(5));
-                citas.setHora(cursorCitas.getString(6));
-                listaCitas.add(citas);
+                cita = new Citas();
+                cita.setId(cursorCitas.getInt(0));
+                cita.setName(cursorCitas.getString(1));
+                cita.setService(cursorCitas.getString(2));
+                cita.setDescription(cursorCitas.getString(3));
+                cita.setRemind(cursorCitas.getString(4));
+                cita.setFecha(cursorCitas.getString(5));
+                cita.setHora(cursorCitas.getString(6));
+                listaCitas.add(cita);
             } while (cursorCitas.moveToNext());
         }
         cursorCitas.close();
         return listaCitas;
-
-
     }
+
+    public Citas VerCitas(int Id) {
+
+        DBHelper dbHelper = new DBHelper(context);
+        SQLiteDatabase db = dbHelper.getWritableDatabase();
+
+
+        Citas cita = null;
+        Cursor cursorCitas;
+
+        cursorCitas = db.rawQuery("SELECT * FROM " + TABLE_CITES + "WHERE Id = " + Id + "LIMIT 1", null);
+
+
+        if (cursorCitas.moveToFirst()) {
+                cita = new Citas();
+                cita.setId(cursorCitas.getInt(0));
+                cita.setName(cursorCitas.getString(1));
+                cita.setService(cursorCitas.getString(2));
+                cita.setDescription(cursorCitas.getString(3));
+                cita.setRemind(cursorCitas.getString(4));
+                cita.setFecha(cursorCitas.getString(5));
+                cita.setHora(cursorCitas.getString(6));
+        }
+        cursorCitas.close();
+        return cita;
+    }
+
+
 }
