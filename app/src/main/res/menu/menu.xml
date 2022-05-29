@@ -11,8 +11,8 @@
         android:title="@string/account" />
 
     <item
-        android:id="@+id/action_settings"
+        android:id="@+id/agregarContacto"
         android:orderInCategory="100"
-        android:title="@string/action_settings"
+        android:title="@string/action_settings_home"
         app:showAsAction="never" />
 </menu>

@@ -70,4 +70,6 @@ public class listaCitasAdapter extends RecyclerView.Adapter<listaCitasAdapter.Ci
             });
         }
     }
+
+
 }

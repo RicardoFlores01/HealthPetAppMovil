@@ -11,6 +11,9 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.HealthPetApp">
         <activity
+            android:name=".ui.contactos.ContactsActivity"
+            android:exported="false" />
+        <activity
             android:name=".VerCitas"
             android:exported="false" />
         <activity
@@ -76,7 +79,6 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-
     </application>
 
 </manifest>

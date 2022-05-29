@@ -20,7 +20,9 @@
     <string name="nav_header_title">Ricardo Flores</string>
     <string name="nav_header_subtitle">HealthPet</string>
     <string name="nav_header_desc">Navigation header</string>
-    <string name="action_settings">Settings</string>
+    <string name="action_settings">Agregar nuevo Contacto</string>
+    <string name="action_settings_home" translatable="false">Settings</string>
+    <string name="action_eliminar" translatable="false">Eliminar Contacto</string>
 
     <string name="menu_home">Home</string>
     <string name="menu_gallery">Contacts</string>
@@ -114,4 +116,7 @@
 
     <string name="help_text">If you have problems with the application communicate through our WhatsApp service sending the screenshot along with your problem and we will solve it.</string>
     <string name="title_activity_menu">HealthPet</string>
+    <!-- TODO: Remove or change this placeholder text -->
+
+    <string name="hello_blank_fragment">Hello blank fragment</string>
 </resources>

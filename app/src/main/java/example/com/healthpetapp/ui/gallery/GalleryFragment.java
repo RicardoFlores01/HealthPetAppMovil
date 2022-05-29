@@ -12,14 +12,21 @@ import androidx.annotation.Nullable;
 import androidx.fragment.app.Fragment;
 import androidx.lifecycle.Observer;
 import androidx.lifecycle.ViewModelProvider;
+import androidx.recyclerview.widget.LinearLayoutManager;
+import androidx.recyclerview.widget.RecyclerView;
 
 import com.google.android.material.floatingactionbutton.FloatingActionButton;
+
+import java.util.ArrayList;
 
 import example.com.healthpetapp.AddContact;
 import example.com.healthpetapp.MyAppointment;
 import example.com.healthpetapp.MyContact;
 import example.com.healthpetapp.R;
+import example.com.healthpetapp.adaptadores.listaContactosAdapter;
 import example.com.healthpetapp.databinding.FragmentGalleryBinding;
+import example.com.healthpetapp.db.DbContactos;
+import example.com.healthpetapp.entidades.Contactos;
 import example.com.healthpetapp.shedule_appointment;
 
 public class GalleryFragment extends Fragment {
@@ -29,6 +36,9 @@ public class GalleryFragment extends Fragment {
 
     TextView contact;
     FloatingActionButton floating_add;
+    RecyclerView listaContactos;
+
+    ArrayList<Contactos> listasArrayContactos;
 
     public View onCreateView(@NonNull LayoutInflater inflater,
                              ViewGroup container, Bundle savedInstanceState) {
@@ -38,14 +48,7 @@ public class GalleryFragment extends Fragment {
         binding = FragmentGalleryBinding.inflate(inflater, container, false);
         View root = binding.getRoot();
 
-        contact = (TextView) root.findViewById(R.id.name_owner);
-        contact.setOnClickListener(new View.OnClickListener(){
-            @Override
-            public void onClick(View view){
-                Intent intent = new Intent(getActivity(), MyContact.class);
-                startActivity(intent);
-            }
-        });
+
 
         floating_add = (FloatingActionButton) root.findViewById(R.id.floatingActionButton);
         floating_add.setOnClickListener(new View.OnClickListener(){
