@@ -8,7 +8,7 @@ import androidx.annotation.Nullable;
 
 public class DBHelper extends SQLiteOpenHelper {
 
-    private static final int DATABASE_VERSION= 1;
+    private static final int DATABASE_VERSION= 2;
     private static final String DATABASE_NAME = "HealtPet.db";
     public static final String TABLE_CITES = "t_cites";
     public static final String TABLE_CONTACTS = "t_contacts";
@@ -35,7 +35,7 @@ public class DBHelper extends SQLiteOpenHelper {
                 "Id INTEGER PRIMARY KEY AUTOINCREMENT," +
                 "nameContact TEXT," +
                 "phone INTEGER," +
-                "address INTEGER," +
+                "address TEXT," +
                 "email TEXT)");
 
         sqLiteDatabase.execSQL("CREATE TABLE " + TABLE_PETS + "(" +

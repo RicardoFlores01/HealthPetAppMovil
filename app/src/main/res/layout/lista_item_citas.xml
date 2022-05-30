@@ -6,19 +6,20 @@
 
     <TextView
         android:id="@+id/viewService"
-        android:layout_width="match_parent"
-        android:layout_height="52dp"
-        android:background="#FFD699"
-        android:textColor="#0B0B0C"
-        android:textSize="22dp" />
+        android:layout_width="410dp"
+        android:layout_height="40dp"
+        android:background="#C3EFA73C"
+        android:gravity="center"
+        android:textColor="@color/black"
+        android:textSize="24sp" />
 
     <TextView
         android:id="@+id/viewRedmin"
         android:layout_width="match_parent"
-        android:layout_height="39dp"
+        android:layout_height="35dp"
         android:gravity="center"
-        android:textColor="#555454"
-        android:textSize="18dp" />
+        android:textColor="#FF5C5B5B"
+        android:textSize="20sp" />
 
     <LinearLayout
         android:layout_width="match_parent"
@@ -28,33 +29,35 @@
         <TextView
             android:id="@+id/viewFecha"
             android:layout_width="110dp"
-            android:layout_height="32dp"
+            android:layout_height="25dp"
+            android:layout_marginStart="65dp"
             android:gravity="center"
-            android:textColor="#555454"
-            android:textSize="14sp" />
+            android:textColor="#FF5C5B5B"
+            android:textSize="16sp" />
 
         <TextView
             android:id="@+id/viewHora"
             android:layout_width="110dp"
-            android:layout_height="32dp"
+            android:layout_height="25dp"
+            android:layout_marginStart="50dp"
             android:gravity="center"
-            android:textColor="#555454"
-            android:textSize="14sp" />
+            android:textColor="#FF5C5B5B"
+            android:textSize="16sp" />
 
         <LinearLayout
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:orientation="vertical">
 
-
             <TextView
-                android:id="@+id/viewEspacio"
+                android:id="@+id/viewEspacio3"
                 android:layout_width="match_parent"
                 android:layout_height="2dp"
                 android:background="@color/black" />
+
         </LinearLayout>
 
-
     </LinearLayout>
+
 
 </LinearLayout>
