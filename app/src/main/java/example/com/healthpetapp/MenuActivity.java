@@ -2,6 +2,7 @@ package example.com.healthpetapp;
 
 import android.content.Intent;
 import android.os.Bundle;
+import android.view.MenuInflater;
 import android.view.MenuItem;
 import android.view.Menu;
 
@@ -49,36 +50,47 @@ public class MenuActivity extends AppCompatActivity {
     @Override
     public boolean onCreateOptionsMenu(Menu menu) {
         // Inflate the menu; this adds items to the action bar if it is present.
-        getMenuInflater().inflate(R.menu.menu, menu);
+        MenuInflater inflater = getMenuInflater();
+        inflater.inflate(R.menu.menu, menu);
         return true;
     }
 
     @Override
     public boolean onOptionsItemSelected(MenuItem item) {
-        // Handle action bar item clicks here. The action bar will
-        // automatically handle clicks on the Home/Up button, so long
-        // as you specify a parent activity in AndroidManifest.xml.
-        int id = item.getItemId();
+        switch (item.getItemId()){
+            case R.id.settigns:
+                ingresarSettings();
+                return true;
 
-        //noinspection SimplifiableIfStatement
-        if (id == R.id.agregarContacto) {
-            Intent settings = new Intent(this, Settings.class);
-            settings.putExtra("key", "settings");
-            this.startActivity(settings);
+            case R.id.action_account:
+                ingresarProfile();
+                return true;
+
+            case R.id.action_language:
+                ingresarLanguage();
+                return true;
+
+
+            default:
+                return super.onOptionsItemSelected(item);
         }
 
-        if (id == R.id.action_language) {
-            Intent intent = new Intent(MenuActivity.this, Language.class);
-            startActivity(intent);
-        }
 
-        if (id == R.id.action_account) {
-            Intent profile = new Intent(this, Profile.class);
-            profile.putExtra("key", "profile");
-            this.startActivity(profile);
-        }
+    }
 
-        return super.onOptionsItemSelected(item);
+    public void ingresarSettings(){
+        Intent intent = new Intent(this, Settings.class);
+        startActivity(intent);
+    }
+
+    public void ingresarLanguage(){
+        Intent intent = new Intent(this, Language.class);
+        startActivity(intent);
+    }
+
+    public void ingresarProfile(){
+        Intent intent = new Intent(this, Profile.class);
+        startActivity(intent);
     }
 
 

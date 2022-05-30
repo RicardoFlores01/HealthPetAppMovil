@@ -25,8 +25,6 @@ public class ContactsActivity extends AppCompatActivity {
     ArrayList<Contactos> listaArrayContactos;
 
 
-
-
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);

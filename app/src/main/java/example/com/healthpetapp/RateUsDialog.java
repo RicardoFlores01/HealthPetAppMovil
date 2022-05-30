@@ -16,7 +16,10 @@ import android.widget.Toast;
 import androidx.annotation.NonNull;
 import androidx.appcompat.widget.AppCompatButton;
 
-public class RateUsDialog extends Dialog {
+import example.com.healthpetapp.db.DbContactos;
+import example.com.healthpetapp.ui.RateUs.RateFragment;
+
+public class RateUsDialog extends Dialog  {
 
     private float userRate = 0;
 
@@ -24,7 +27,7 @@ public class RateUsDialog extends Dialog {
         super(context);
     }
 
-     Button rateNowBtn;
+     Button rateNowBtn, laterBtn;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -32,25 +35,27 @@ public class RateUsDialog extends Dialog {
         setContentView(R.layout.rate_us_dialog_layout);
 
         rateNowBtn = (Button) findViewById(R.id.rateNowBtn);
+        laterBtn = findViewById(R.id.laterBtn);
 
         final AppCompatButton rateNowBtn = findViewById(R.id.rateNowBtn);
         final AppCompatButton laterBtn = findViewById(R.id.laterBtn);
         final RatingBar ratingbar = findViewById(R.id.ratingbar);
         final ImageView ratingImage = findViewById(R.id.ratingImage);
 
+
         rateNowBtn.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                //Toast.makeText(this, "Rating Save", Toast.LENGTH_LONG).show();
+
+                Toast.makeText(getContext(), "Rating Sent" + " "+ userRate, Toast.LENGTH_SHORT).show();
+                dismiss();
             }
         });
 
         laterBtn.setOnClickListener(new View.OnClickListener(){
             @Override
             public void onClick(View view){
-
-
-
+                dismiss();
 
             }
         });
@@ -58,7 +63,6 @@ public class RateUsDialog extends Dialog {
         ratingbar.setOnRatingBarChangeListener(new RatingBar.OnRatingBarChangeListener() {
             @Override
             public void onRatingChanged(RatingBar ratingBar, float v, boolean b) {
-
 
                 if (v <= 1){
                     ratingImage.setImageResource(R.drawable.one_star);
@@ -88,7 +92,7 @@ public class RateUsDialog extends Dialog {
         ScaleAnimation scaleAnimation = new ScaleAnimation(0, 1f, 0, 1f, Animation.RELATIVE_TO_SELF, 0.5f, Animation.RELATIVE_TO_SELF, 0.5f);
 
         scaleAnimation.setFillAfter(true);
-        scaleAnimation.setDuration(200);
+        scaleAnimation.setDuration(100);
         ratingImage.startAnimation(scaleAnimation);
     }
 }

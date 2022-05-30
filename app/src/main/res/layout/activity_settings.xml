@@ -49,7 +49,7 @@
         app:layout_constraintTop_toBottomOf="@id/line" />
 
     <TextView
-        android:id="@+id/language"
+        android:id="@+id/viewlanguage"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginStart="21dp"
@@ -68,7 +68,7 @@
         android:layout_marginTop="22dp"
         android:background="@color/line"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@id/language" />
+        app:layout_constraintTop_toBottomOf="@id/viewlanguage" />
 
     <TextView
         android:id="@+id/icon_help"
@@ -81,7 +81,7 @@
         app:layout_constraintTop_toBottomOf="@id/line2" />
 
     <TextView
-        android:id="@+id/help"
+        android:id="@+id/Viewhelp"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginStart="21dp"
@@ -100,7 +100,7 @@
         android:layout_marginTop="20dp"
         android:background="@color/line"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@id/help" />
+        app:layout_constraintTop_toBottomOf="@id/Viewhelp" />
 
     <TextView
         android:id="@+id/icon_aboutus"

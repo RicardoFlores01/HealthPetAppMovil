@@ -1,10 +1,12 @@
 package example.com.healthpetapp;
 
+import androidx.annotation.NonNull;
 import androidx.appcompat.app.AppCompatActivity;
 
 import android.app.DatePickerDialog;
 import android.app.TimePickerDialog;
 import android.os.Bundle;
+import android.view.MenuItem;
 import android.view.View;
 import android.widget.Button;
 import android.widget.DatePicker;
@@ -61,8 +63,23 @@ public class shedule_appointment extends AppCompatActivity implements View.OnCli
             }
         });
 
+        getSupportActionBar().setDisplayHomeAsUpEnabled(true);
+
 
     }
+    @Override
+    public boolean onOptionsItemSelected(@NonNull MenuItem item) {
+        switch (item.getItemId()){
+            case android.R.id.home:
+                finish();
+                return true;
+        }
+        return super.onOptionsItemSelected(item);
+    }
+
+
+
+
     private void limpiar(){
         name.setText("");
         ser_text.setText("");

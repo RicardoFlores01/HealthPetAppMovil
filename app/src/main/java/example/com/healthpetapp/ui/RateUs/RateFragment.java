@@ -1,6 +1,7 @@
 package example.com.healthpetapp.ui.RateUs;
 
 import android.content.Intent;
+import android.graphics.drawable.ColorDrawable;
 import android.os.Bundle;
 
 import androidx.fragment.app.Fragment;
@@ -15,6 +16,7 @@ import com.google.android.material.floatingactionbutton.FloatingActionButton;
 
 import example.com.healthpetapp.AddContact;
 import example.com.healthpetapp.R;
+import example.com.healthpetapp.RateUsDialog;
 import example.com.healthpetapp.shedule_appointment;
 import example.com.healthpetapp.ver_RateUs;
 
@@ -66,6 +68,8 @@ public class RateFragment extends Fragment {
             mParam1 = getArguments().getString(ARG_PARAM1);
             mParam2 = getArguments().getString(ARG_PARAM2);
         }
+
+
       
 
     }
@@ -83,8 +87,10 @@ public class RateFragment extends Fragment {
         btnRateuss.setOnClickListener(new View.OnClickListener(){
             @Override
             public void onClick(View view){
-                Intent intent = new Intent(getActivity(), ver_RateUs.class);
-                startActivity(intent);
+
+                RateUsDialog rateUsDialog = new RateUsDialog(getContext());
+                rateUsDialog.show();
+
             }
         });
 
@@ -92,8 +98,12 @@ public class RateFragment extends Fragment {
             @Override
             public void onClick(View view) {
                 Toast.makeText(getActivity(), "COMENTARIO ENVIADO", Toast.LENGTH_LONG).show();
+
             }
         });
+
+
+
 
         return view;
 
