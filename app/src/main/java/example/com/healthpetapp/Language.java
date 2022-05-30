@@ -4,11 +4,8 @@ import androidx.appcompat.app.AppCompatActivity;
 
 import android.content.Intent;
 import android.content.res.Configuration;
-import android.content.res.Resources;
 import android.os.Bundle;
-import android.util.DisplayMetrics;
 import android.view.View;
-import android.widget.Button;
 import android.widget.TextView;
 
 import java.util.Locale;
@@ -35,7 +32,7 @@ public class Language extends AppCompatActivity {
                 config.locale = locale;
 
                 getResources().updateConfiguration(config, null);
-                Intent  refresh = new Intent(Language.this, MenuActivity.class);
+                Intent refresh = new Intent(Language.this, MenuActivity.class);
                 startActivity(refresh);
                 finish();
             }
@@ -65,7 +62,4 @@ public class Language extends AppCompatActivity {
         finish();*/
 
     }
-
-
-
 }

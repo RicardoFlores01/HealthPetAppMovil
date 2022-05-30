@@ -124,6 +124,8 @@
     <string name="add_contact">Add Contact</string>
     <string name="shedule_appointment">Shedule Appointment</string>
 
+    <string name="action_language">Language</string>
+
     <string name="title_activity_menu">HealthPet</string>
     <!-- TODO: Remove or change this placeholder text -->
 

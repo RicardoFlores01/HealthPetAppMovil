@@ -21,6 +21,13 @@
     <string name="nav_header_subtitle">HealthPet</string>
     <string name="nav_header_desc">Navigation header</string>
     <string name="action_settings">Ajustes</string>
+    <string name="action_language">Lenguaje</string>
+
+    <string name="message">¿Qué piensas de la aplicación HealthPet?</string>
+    <string name="btn_rateus">Calificanos!</string>
+
+    <string name="comment">Añadir comentario</string>
+    <string name="sumbit_comment">Enviar</string>
 
     <string name="menu_home">Inicio</string>
     <string name="menu_gallery">Contactos</string>

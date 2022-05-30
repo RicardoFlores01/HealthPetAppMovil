@@ -19,41 +19,44 @@
             android:name=".ui.contactos.ContactsActivity"
             android:exported="false" />
         <activity
+            android:name=".About"
+            android:exported="true" />
+        <activity
+            android:name=".Language"
+            android:exported="true" />
+        <activity
+            android:name=".Help"
+            android:exported="true" />
+        <activity
             android:name=".VerCitas"
             android:exported="false"
             android:label="@string/view_dates"
             android:parentActivityName=".MenuActivity" />
-
         <activity
             android:name=".add_pet"
             android:exported="true"
             android:label="@string/add_pet"
-            android:parentActivityName=".MenuActivity"/>
-
+            android:parentActivityName=".MenuActivity" />
         <activity
             android:name=".Settings"
             android:exported="true"
             android:label="@string/settings"
             android:parentActivityName=".MenuActivity" />
-
         <activity
             android:name=".Profile"
             android:exported="true"
             android:label="@string/profile_activity"
             android:parentActivityName=".MenuActivity" />
-
         <activity
             android:name=".MedicalHistory"
             android:exported="true"
             android:label="@string/medicalhistory_activity"
             android:parentActivityName=".MenuActivity" />
-
         <activity
             android:name=".MyContact"
             android:exported="true"
             android:label="@string/mycontact_activity"
             android:parentActivityName=".MenuActivity" />
-
         <activity
             android:name=".AddContact"
             android:exported="true"

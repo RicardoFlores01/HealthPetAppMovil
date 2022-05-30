@@ -27,14 +27,8 @@
         <entry key="..\:/Users/52449/AndroidStudioProjects/HealthPetApp/app/src/main/res/layout/nav_header_menu.xml" value="0.25" />
         <entry key="..\:/Users/52449/AndroidStudioProjects/HealthPetApp/app/src/main/res/menu/activity_main_drawer.xml" value="0.25" />
         <entry key="..\:/Users/52449/AndroidStudioProjects/HealthPetApp/app/src/main/res/menu/menu.xml" value="0.20260416666666667" />
-        <entry key="..\:/abraham/Documentos/Desarrollo moviles/andorid/HealthPetAppMovil/app/src/main/res/drawable/rate_us_dialog_layout.xml" value="0.143" />
-        <entry key="..\:/abraham/Documentos/Desarrollo moviles/andorid/HealthPetAppMovil/app/src/main/res/drawable/round_back_blue_10.xml" value="0.1585" />
-        <entry key="..\:/abraham/Documentos/Desarrollo moviles/andorid/HealthPetAppMovil/app/src/main/res/drawable/round_back_brown_6.xml" value="0.1585" />
-        <entry key="..\:/abraham/Documentos/Desarrollo moviles/andorid/HealthPetAppMovil/app/src/main/res/drawable/round_back_while_stroke_1000.xml" value="0.143" />
-        <entry key="..\:/abraham/Documentos/Desarrollo moviles/andorid/HealthPetAppMovil/app/src/main/res/drawable/round_back_white_1000.xml" value="0.1375" />
         <entry key="..\:/abraham/Documentos/Desarrollo moviles/andorid/HealthPetAppMovil/app/src/main/res/layout/activity_add_contact.xml" value="0.20416666666666666" />
         <entry key="..\:/abraham/Documentos/Desarrollo moviles/andorid/HealthPetAppMovil/app/src/main/res/layout/activity_add_pet.xml" value="0.20416666666666666" />
-        <entry key="..\:/abraham/Documentos/Desarrollo moviles/andorid/HealthPetAppMovil/app/src/main/res/layout/activity_contacts.xml" value="0.20416666666666666" />
         <entry key="..\:/abraham/Documentos/Desarrollo moviles/andorid/HealthPetAppMovil/app/src/main/res/layout/activity_login.xml" value="0.20416666666666666" />
         <entry key="..\:/abraham/Documentos/Desarrollo moviles/andorid/HealthPetAppMovil/app/src/main/res/layout/activity_main.xml" value="0.20416666666666666" />
         <entry key="..\:/abraham/Documentos/Desarrollo moviles/andorid/HealthPetAppMovil/app/src/main/res/layout/activity_menu.xml" value="0.20416666666666666" />
@@ -43,20 +37,13 @@
         <entry key="..\:/abraham/Documentos/Desarrollo moviles/andorid/HealthPetAppMovil/app/src/main/res/layout/activity_register.xml" value="0.20416666666666666" />
         <entry key="..\:/abraham/Documentos/Desarrollo moviles/andorid/HealthPetAppMovil/app/src/main/res/layout/activity_shedule_appointment.xml" value="0.20416666666666666" />
         <entry key="..\:/abraham/Documentos/Desarrollo moviles/andorid/HealthPetAppMovil/app/src/main/res/layout/activity_ver_citas.xml" value="0.25" />
-        <entry key="..\:/abraham/Documentos/Desarrollo moviles/andorid/HealthPetAppMovil/app/src/main/res/layout/activity_ver_rate_us.xml" value="0.20416666666666666" />
         <entry key="..\:/abraham/Documentos/Desarrollo moviles/andorid/HealthPetAppMovil/app/src/main/res/layout/app_bar_menu.xml" value="0.20416666666666666" />
         <entry key="..\:/abraham/Documentos/Desarrollo moviles/andorid/HealthPetAppMovil/app/src/main/res/layout/content_menu.xml" value="0.20416666666666666" />
         <entry key="..\:/abraham/Documentos/Desarrollo moviles/andorid/HealthPetAppMovil/app/src/main/res/layout/fragment_gallery.xml" value="0.20416666666666666" />
         <entry key="..\:/abraham/Documentos/Desarrollo moviles/andorid/HealthPetAppMovil/app/src/main/res/layout/fragment_home.xml" value="0.20416666666666666" />
-        <entry key="..\:/abraham/Documentos/Desarrollo moviles/andorid/HealthPetAppMovil/app/src/main/res/layout/fragment_rate.xml" value="0.20416666666666666" />
         <entry key="..\:/abraham/Documentos/Desarrollo moviles/andorid/HealthPetAppMovil/app/src/main/res/layout/fragment_slideshow.xml" value="0.20416666666666666" />
         <entry key="..\:/abraham/Documentos/Desarrollo moviles/andorid/HealthPetAppMovil/app/src/main/res/layout/lista_item_citas.xml" value="0.22" />
-        <entry key="..\:/abraham/Documentos/Desarrollo moviles/andorid/HealthPetAppMovil/app/src/main/res/layout/lista_item_contactos.xml" value="0.20416666666666666" />
         <entry key="..\:/abraham/Documentos/Desarrollo moviles/andorid/HealthPetAppMovil/app/src/main/res/layout/nav_header_menu.xml" value="0.20416666666666666" />
-        <entry key="..\:/abraham/Documentos/Desarrollo moviles/andorid/HealthPetAppMovil/app/src/main/res/layout/rate_us_dialog_layout.xml" value="0.20416666666666666" />
-        <entry key="..\:/abraham/Documentos/Desarrollo moviles/andorid/HealthPetAppMovil/app/src/main/res/menu/activity_main_drawer.xml" value="0.25" />
-        <entry key="..\:/abraham/Documentos/Desarrollo moviles/andorid/HealthPetAppMovil/app/src/main/res/menu/menu.xml" value="0.20416666666666666" />
-        <entry key="..\:/abraham/Documentos/Desarrollo moviles/andorid/HealthPetAppMovil/app/src/main/res/menu/menu_contactos.xml" value="0.20416666666666666" />
       </map>
     </option>
   </component>

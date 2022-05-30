@@ -67,6 +67,11 @@ public class MenuActivity extends AppCompatActivity {
             this.startActivity(settings);
         }
 
+        if (id == R.id.action_language) {
+            Intent intent = new Intent(MenuActivity.this, Language.class);
+            startActivity(intent);
+        }
+
         if (id == R.id.action_account) {
             Intent profile = new Intent(this, Profile.class);
             profile.putExtra("key", "profile");
