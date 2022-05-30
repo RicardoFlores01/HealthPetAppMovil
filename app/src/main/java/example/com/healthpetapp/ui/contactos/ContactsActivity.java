@@ -1,5 +1,6 @@
 package example.com.healthpetapp.ui.contactos;
 
+import androidx.annotation.NonNull;
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.recyclerview.widget.LinearLayoutManager;
 import androidx.recyclerview.widget.RecyclerView;
@@ -41,6 +42,8 @@ public class ContactsActivity extends AppCompatActivity {
         listaContactosAdapter adapter = new listaContactosAdapter(dbContactos.mostrarContactos());
         listaContactos.setAdapter(adapter);
 
+        getSupportActionBar().setDisplayHomeAsUpEnabled(true);
+
 
     }
 
@@ -50,10 +53,16 @@ public class ContactsActivity extends AppCompatActivity {
         return true;
     }
 
+
+
     public boolean onOptionsItemSelected(MenuItem item){
         switch (item.getItemId()){
             case R.id.agregarContacto:
                 nuevoRegistro();
+                return true;
+
+            case android.R.id.home:
+                finish();
                 return true;
 
             default:

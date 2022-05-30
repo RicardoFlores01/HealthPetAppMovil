@@ -11,6 +11,9 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.HealthPetApp">
         <activity
+            android:name=".ver_RateUs"
+            android:exported="false" />
+        <activity
             android:name=".ui.contactos.ContactsActivity"
             android:exported="false" />
         <activity

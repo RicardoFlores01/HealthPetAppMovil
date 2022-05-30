@@ -11,7 +11,7 @@
         android:title="@string/account" />
 
     <item
-        android:id="@+id/agregarContacto"
+        android:id="@+id/settigns"
         android:orderInCategory="100"
         android:title="@string/action_settings_home"
         app:showAsAction="never" />

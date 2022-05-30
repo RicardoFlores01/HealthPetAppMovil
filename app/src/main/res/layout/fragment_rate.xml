@@ -3,12 +3,73 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
     tools:context=".ui.RateUs.RateFragment">
 
     <TextView
+        android:id="@+id/title_rateus"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="40dp"
         android:text="@string/menu_rateus"
-        android:layout_gravity="center"
-        android:textSize="60dp"/>
+        android:textSize="60dp" />
+
+    <TextView
+        android:id="@+id/messa_rateus"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="155dp"
+        android:textSize="20dp"
+        android:text="@string/message"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/title_rateus"/>
+
+    <Button
+        android:id="@+id/btnRateuss"
+        android:layout_width="205dp"
+        android:layout_height="55dp"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="205dp"
+        android:textSize="20dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/messa_rateus"
+        android:text="@string/btn_rateus"/>
+
+    <EditText
+        android:id="@+id/txtComentario"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="400dp"
+        android:ems="50"
+        android:inputType="text"
+        android:hint="@string/type"
+        android:layout_marginStart="15dp"
+        />
+
+    <TextView
+        android:layout_width="359dp"
+        android:layout_height="wrap_content"
+        android:text="@string/comment"
+        android:textSize="18sp"
+        app:flow_verticalAlign="center"
+        android:textColor="@color/black"
+        android:textStyle="bold"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        android:layout_marginStart="15dp"
+        android:layout_marginTop="375dp"/>
+
+
+    <Button
+        android:id="@+id/SumbitComment"
+        android:layout_width="140dp"
+        android:layout_height="60dp"
+        android:text="@string/sumbit_comment"
+        android:backgroundTint="#7D9AB1"
+        app:cornerRadius="20dp"
+        android:layout_marginStart="15dp"
+        android:layout_marginTop="465dp"
+        />
 </FrameLayout>
