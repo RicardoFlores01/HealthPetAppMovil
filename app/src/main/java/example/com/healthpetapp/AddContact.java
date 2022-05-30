@@ -1,8 +1,10 @@
 package example.com.healthpetapp;
 
+import androidx.annotation.NonNull;
 import androidx.appcompat.app.AppCompatActivity;
 
 import android.os.Bundle;
+import android.view.MenuItem;
 import android.view.View;
 import android.widget.Button;
 import android.widget.EditText;
@@ -32,7 +34,6 @@ public class AddContact extends AppCompatActivity {
             public void onClick(View view) {
                 DbContactos dbContactos = new DbContactos(AddContact.this);
                 long id = dbContactos.instertaContacto(txtName.getText().toString(), txtPhone.getText().toString(), txtAddress.getText().toString(), txtEmail.getText().toString());
-
                 if (id > 0){
                     Toast.makeText(AddContact.this, "CONTACTO GUARDADO", Toast.LENGTH_LONG).show();
                     limpiar();
@@ -49,6 +50,18 @@ public class AddContact extends AppCompatActivity {
         txtName.setText("");
         txtPhone.setText("");
         txtAddress.setText("");
-        txtEmail.setText("");
+
+
+        getSupportActionBar().setDisplayHomeAsUpEnabled(true);
+    }
+
+    @Override
+    public boolean onOptionsItemSelected(@NonNull MenuItem item) {
+        switch (item.getItemId()){
+            case android.R.id.home:
+                finish();
+                return true;
+        }
+        return super.onOptionsItemSelected(item);
     }
 }

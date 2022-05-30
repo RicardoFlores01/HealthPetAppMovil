@@ -55,7 +55,6 @@ public class HomeFragment extends Fragment {
         });
 
 
-
         Ver_citas = (Button) root.findViewById(R.id.btnVercitas);
         Ver_citas.setOnClickListener(new View.OnClickListener(){
             @Override
@@ -73,6 +72,7 @@ public class HomeFragment extends Fragment {
                 //textView.setText(s);
             }
         });
+
         return root;
     }
 
