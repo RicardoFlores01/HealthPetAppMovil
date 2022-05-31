@@ -36,8 +36,10 @@
     <string name="menu_settings">Ajustes</string>
     <string name="menu_rateus">Calificanos</string>
 
-    <string name="title_dates">Mis citas</string>
-    <string name="title_date">Cita médica para revisar al perro</string>
+    <string name="action_eliminar">Eliminar contacto</string>
+
+    <string name="title_date">Mis citas</string>
+    <string name="title_dates">Para poder ver tus citas guaradas, haz clic</string>
     <string name="date">15/02/22</string>
     <string name="hour">15:00 pm</string>
     <string name="description">Detalles de la cita si es un paciente de toda la semana o si tiene una vacuna especial que administrar.</string>
@@ -128,5 +130,8 @@
     <string name="save_pet">Guardar mascota</string>
 
     <string name="title_activity_menu">HealthPet</string>
+    <string name="btnCitas">Ver citas</string>
+    <string name="tips1">Tip</string>
+    <string name="tip2_comment">Revisa diariamente las citas pendientes que tienes</string>
 
 </resources>

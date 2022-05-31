@@ -1,29 +1,54 @@
 package example.com.healthpetapp.ui.contactos;
 
 import androidx.annotation.NonNull;
+import androidx.annotation.Nullable;
 import androidx.appcompat.app.AppCompatActivity;
+import androidx.lifecycle.Observer;
+import androidx.lifecycle.ViewModelProvider;
 import androidx.recyclerview.widget.LinearLayoutManager;
 import androidx.recyclerview.widget.RecyclerView;
 
 import android.content.Intent;
 import android.os.Bundle;
+import android.view.LayoutInflater;
 import android.view.Menu;
 import android.view.MenuInflater;
 import android.view.MenuItem;
+import android.view.View;
+import android.view.ViewGroup;
+
+import com.google.android.material.floatingactionbutton.FloatingActionButton;
 
 import java.util.ArrayList;
 
 import example.com.healthpetapp.AddContact;
 import example.com.healthpetapp.R;
 import example.com.healthpetapp.adaptadores.listaContactosAdapter;
+import example.com.healthpetapp.databinding.FragmentGalleryBinding;
 import example.com.healthpetapp.db.DbContactos;
 import example.com.healthpetapp.entidades.Contactos;
+import example.com.healthpetapp.ui.gallery.GalleryViewModel;
 
 public class ContactsActivity extends AppCompatActivity {
     
     RecyclerView listaContactos;
     ArrayList<Contactos> listaArrayContactos;
 
+    private GalleryViewModel galleryViewModel;
+    private FragmentGalleryBinding binding;
+
+
+    public View onCreateView(@NonNull LayoutInflater inflater,
+                             ViewGroup container, Bundle savedInstanceState) {
+        galleryViewModel =
+                new ViewModelProvider(this).get(GalleryViewModel.class);
+
+        binding = FragmentGalleryBinding.inflate(inflater, container, false);
+        View root = binding.getRoot();
+
+
+        return root;
+    }
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -73,4 +98,6 @@ public class ContactsActivity extends AppCompatActivity {
         Intent intent = new Intent(this, AddContact.class);
         startActivity(intent);
     }
+
+
 }

@@ -16,12 +16,7 @@ import androidx.lifecycle.ViewModelProvider;
 
 import com.google.android.material.floatingactionbutton.FloatingActionButton;
 
-import example.com.healthpetapp.AddContact;
-import example.com.healthpetapp.LoginActivity;
-import example.com.healthpetapp.MyAppointment;
 import example.com.healthpetapp.R;
-import example.com.healthpetapp.RegisterActivity;
-import example.com.healthpetapp.VerCitas;
 import example.com.healthpetapp.databinding.FragmentHomeBinding;
 import example.com.healthpetapp.shedule_appointment;
 
@@ -55,14 +50,14 @@ public class HomeFragment extends Fragment {
         });
 
 
-        Ver_citas = (Button) root.findViewById(R.id.btnVercitas);
+        /*Ver_citas = (Button) root.findViewById(R.id.btnVercitas);
         Ver_citas.setOnClickListener(new View.OnClickListener(){
             @Override
             public void onClick(View view){
-                Intent intent = new Intent(getActivity(), VerCitas.class);
+                Intent intent = new Intent(getActivity(), ui.citas.VerCitas.class);
                 startActivity(intent);
             }
-        });
+        });*/
 
 
        // final TextView textView = binding.textHome;
