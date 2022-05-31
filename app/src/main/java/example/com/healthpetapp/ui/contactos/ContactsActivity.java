@@ -9,6 +9,7 @@ import androidx.recyclerview.widget.LinearLayoutManager;
 import androidx.recyclerview.widget.RecyclerView;
 
 import android.content.Intent;
+import android.net.Uri;
 import android.os.Bundle;
 import android.view.LayoutInflater;
 import android.view.Menu;
@@ -16,13 +17,19 @@ import android.view.MenuInflater;
 import android.view.MenuItem;
 import android.view.View;
 import android.view.ViewGroup;
+import android.widget.Button;
+import android.widget.ImageView;
+import android.widget.TextView;
+import android.widget.Toast;
 
 import com.google.android.material.floatingactionbutton.FloatingActionButton;
 
 import java.util.ArrayList;
 
 import example.com.healthpetapp.AddContact;
+import example.com.healthpetapp.MenuActivity;
 import example.com.healthpetapp.R;
+import example.com.healthpetapp.TwoStepVerification;
 import example.com.healthpetapp.adaptadores.listaContactosAdapter;
 import example.com.healthpetapp.databinding.FragmentGalleryBinding;
 import example.com.healthpetapp.db.DbContactos;
@@ -36,7 +43,6 @@ public class ContactsActivity extends AppCompatActivity {
 
     private GalleryViewModel galleryViewModel;
     private FragmentGalleryBinding binding;
-
 
     public View onCreateView(@NonNull LayoutInflater inflater,
                              ViewGroup container, Bundle savedInstanceState) {
@@ -54,6 +60,16 @@ public class ContactsActivity extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_contacts);
+
+        /*TextView img = (TextView) findViewById(R.id.callContact);
+
+        img.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                String tel = "44495777823";
+                startActivity(new Intent(Intent.ACTION_DIAL).setData(Uri.parse("tel:"+tel)));
+            }
+        });*/
 
         listaContactos = findViewById(R.id.listaContactos);
         listaContactos.setLayoutManager(new LinearLayoutManager(this));

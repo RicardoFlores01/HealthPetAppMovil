@@ -134,4 +134,5 @@
     <string name="btnCitas">View appointment</string>
     <string name="tips1">Tip</string>
     <string name="tip2_comment">Review your pending appointments on a daily basis</string>
+    <string name="appointment">Appointments</string>
 </resources>

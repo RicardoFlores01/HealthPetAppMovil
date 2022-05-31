@@ -14,13 +14,17 @@
         android:theme="@style/Theme.HealthPetApp">
         <activity
             android:name=".Pet"
-            android:exported="false" />
+            android:exported="false"
+            android:label="@string/menu_slideshow"
+            android:parentActivityName=".MenuActivity"/>
         <activity
             android:name=".ver_RateUs"
             android:exported="false" />
         <activity
             android:name=".ui.contactos.ContactsActivity"
-            android:exported="false" />
+            android:exported="true"
+            android:label="@string/menu_gallery"
+            android:parentActivityName=".MenuActivity"/>
         <activity
             android:name=".About"
             android:exported="true" />
@@ -73,6 +77,11 @@
             android:name=".TwoStepVerification"
             android:exported="true"
             android:label="@string/Two_Step_Verification" />
+        <activity
+            android:name=".VerCitas"
+            android:exported="true"
+            android:label="@string/appointment"
+            android:parentActivityName=".MenuActivity"/>
         <activity
             android:name=".RegisterActivity"
             android:exported="true"

@@ -133,5 +133,6 @@
     <string name="btnCitas">Ver citas</string>
     <string name="tips1">Tip</string>
     <string name="tip2_comment">Revisa diariamente las citas pendientes que tienes</string>
+    <string name="appointment">Citas</string>
 
 </resources>

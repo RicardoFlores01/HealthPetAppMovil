@@ -61,7 +61,7 @@ public class MenuActivity extends AppCompatActivity {
         int id = item.getItemId();
 
         //noinspection SimplifiableIfStatement
-        if (id == R.id.agregarContacto) {
+        if (id == R.id.settigns) {
             Intent settings = new Intent(this, Settings.class);
             settings.putExtra("key", "settings");
             this.startActivity(settings);
